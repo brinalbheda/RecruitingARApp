@@ -1,0 +1,20 @@
+{
+  "name": "ar-recruiting-assistant",
+  "version": "0.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "debug": "latest",
+    "express": "latest",
+    "http-errors": "latest",
+    "jade": "latest",
+    "morgan": "latest",
+    "pug": "latest",
+    "require": "latest",
+    "node-linkedin": "0.5.6"
+  }
+}
