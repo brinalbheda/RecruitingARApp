@@ -6,8 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./index');
 var app = express();
-const clientId = ""; // Change
-const clientSecret = ""; // Change
+const clientId = "";
+const clientSecret = "";
 var Linkedin = require('node-linkedin')(clientId, clientSecret);
 const state = "ar4567";
 // view engine setup
@@ -31,7 +31,7 @@ app.use('/', indexRouter);
 
 app.get('/oauth/linkedin', function (req, res) {
     var scope = ['r_basicprofile', 'r_emailaddress'];
-    Linkedin.setCallback(req.protocol + '://' + req.headers.host + '/oauth/linkedin/callback?userurl=' +  req.query.userurl);
+    Linkedin.setCallback(req.protocol + '://' + req.headers.host + '/oauth/linkedin/callback?userid=' +  req.query.userid);
     Linkedin.auth.authorize(res, scope, state);
 });
 
@@ -46,23 +46,23 @@ app.get('/oauth/linkedin/callback', function (req, res) {
             });
             console.log("\nUser ID: " + req.query.userid + "\n");
             console.log("User URL="+ req.query.userurl);
-            // linkedinInstance.people.me(function(err, $in) {
+            // linkedinInstance.people.me(['id', 'first-name', 'last-name'],function(err, $in) {
             //     console.log($in);
             // });
-            // linkedinInstance.people.id(req.query.userid, function (err, $in) {
-            //     console.log($in);
-            //     res.send($in);
-            //     if(err){
-            //         res.send("error"); 
-            //     }
-            // });
-            linkedinInstance.people.url(req.query.userurl, function (err, $in) {
+            linkedinInstance.people.id(req.query.userid,['id', 'first-name', 'last-name', 'summary'], function (err, $in) {
                 console.log($in);
                 res.send($in);
                 if(err){
                     res.send("error"); 
                 }
             });
+            // linkedinInstance.people.url(req.query.userurl, function (err, $in) {
+            //     console.log($in);
+            //     res.send($in);
+            //     if(err){
+            //         res.send("error"); 
+            //     }
+            // });
         });
     } else {
         return res.redirect('/');
