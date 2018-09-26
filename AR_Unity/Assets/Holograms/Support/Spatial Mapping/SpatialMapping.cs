@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.XR.WSA;
+using UnityEngine.VR.WSA;
 
 public class SpatialMapping : MonoBehaviour {
 

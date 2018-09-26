@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.XR.WSA.Input;
+using UnityEngine.VR.WSA.Input;
 
 public class Fitbox : MonoBehaviour
 {
@@ -26,29 +26,27 @@ public class Fitbox : MonoBehaviour
 
     private void Awake()
     {
-        if (Application.isEditor)
-        {
-            // If we are running inside Unity's Editor, disable the Fitbox script
-            // as there is no easy way to dismiss it to see our actual holograms.
-            enabled = false;
-        }
-        else
-        {
-            // These are the holograms to show when the Fitbox is dismissed
-            if (HologramCollection)
-            {
-                collectionStartingOffsetFromCamera = HologramCollection.transform.localPosition;
-                HologramCollection.SetActive(false);
-            }
+#if UNITY_EDITOR
+        // If we are running inside Unity's Editor, disable the Fitbox script
+        // as there is no easy way to dismiss it to see our actual holograms.
+        enabled = false;
+#else // !UNITY_EDITOR
 
-            // Set up our GestureRecognizer to listen for the SelectEvent
-            recognizer = new GestureRecognizer();
-            recognizer.Tapped += (args) =>
-            {
-                DismissFitbox();
-            };
-            recognizer.StartCapturingGestures();
+        // These are the holograms to show when the Fitbox is dismissed
+        if (HologramCollection)
+        {
+            collectionStartingOffsetFromCamera = HologramCollection.transform.localPosition;
+            HologramCollection.SetActive(false);
         }
+
+        // Set up our GestureRecognizer to listen for the SelectEvent
+        recognizer = new GestureRecognizer();
+        recognizer.TappedEvent += (source, tapCount, ray) =>
+        {
+            DismissFitbox();
+        };
+        recognizer.StartCapturingGestures();
+#endif
     }
 
     private void DismissFitbox()
