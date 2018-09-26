@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.VR.WSA.Input;
+
 
 public class Fitbox : MonoBehaviour
 {
@@ -21,7 +21,7 @@ public class Fitbox : MonoBehaviour
     private float Distance = 2.0f;
 
     private Interpolator interpolator;
-    private GestureRecognizer recognizer;
+    private UnityEngine.XR.WSA.Input.GestureRecognizer recognizer;
     private bool isInitialized = false;
 
     private void Awake()
