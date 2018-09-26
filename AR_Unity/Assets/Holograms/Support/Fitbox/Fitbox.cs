@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using UnityEngine.XR.WSA.Input;
 
 public class Fitbox : MonoBehaviour
 {
@@ -21,32 +21,34 @@ public class Fitbox : MonoBehaviour
     private float Distance = 2.0f;
 
     private Interpolator interpolator;
-    private UnityEngine.XR.WSA.Input.GestureRecognizer recognizer;
+    private GestureRecognizer recognizer;
     private bool isInitialized = false;
 
     private void Awake()
     {
-#if UNITY_EDITOR
-        // If we are running inside Unity's Editor, disable the Fitbox script
-        // as there is no easy way to dismiss it to see our actual holograms.
-        enabled = false;
-#else // !UNITY_EDITOR
-
-        // These are the holograms to show when the Fitbox is dismissed
-        if (HologramCollection)
+        if (Application.isEditor)
         {
-            collectionStartingOffsetFromCamera = HologramCollection.transform.localPosition;
-            HologramCollection.SetActive(false);
+            // If we are running inside Unity's Editor, disable the Fitbox script
+            // as there is no easy way to dismiss it to see our actual holograms.
+            enabled = false;
         }
-
-        // Set up our GestureRecognizer to listen for the SelectEvent
-        recognizer = new GestureRecognizer();
-        recognizer.TappedEvent += (source, tapCount, ray) =>
+        else
         {
-            DismissFitbox();
-        };
-        recognizer.StartCapturingGestures();
-#endif
+            // These are the holograms to show when the Fitbox is dismissed
+            if (HologramCollection)
+            {
+                collectionStartingOffsetFromCamera = HologramCollection.transform.localPosition;
+                HologramCollection.SetActive(false);
+            }
+
+            // Set up our GestureRecognizer to listen for the SelectEvent
+            recognizer = new GestureRecognizer();
+            recognizer.Tapped += (args) =>
+            {
+                DismissFitbox();
+            };
+            recognizer.StartCapturingGestures();
+        }
     }
 
     private void DismissFitbox()
