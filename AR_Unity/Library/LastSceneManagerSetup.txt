@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Recruiter UI.unity
-  isLoaded: 1
-  isActive: 1

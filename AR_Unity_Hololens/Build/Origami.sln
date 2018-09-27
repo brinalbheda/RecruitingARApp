@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Origami", "Origami\Origami.csproj", "{13A45C13-3265-47B8-BC48-A553B569DF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "C:\Users\gpstudent.VGAMEPIPE\Downloads\HolographicAcademy-1.5.6-101\Origami\Build\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj", "{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "C:\Users\gpstudent.VGAMEPIPE\Downloads\HolographicAcademy-1.5.6-101\Origami\Build\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj", "{CA25C666-ED65-41E6-B2A4-27D104662E67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Master|ARM = Master|ARM
+		Master|x64 = Master|x64
+		Master|x86 = Master|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|ARM.ActiveCfg = Debug|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|ARM.Build.0 = Debug|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|ARM.Deploy.0 = Debug|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x64.ActiveCfg = Debug|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x64.Build.0 = Debug|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x64.Deploy.0 = Debug|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x86.ActiveCfg = Debug|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x86.Build.0 = Debug|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x86.Deploy.0 = Debug|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|ARM.ActiveCfg = Master|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|ARM.Build.0 = Master|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|ARM.Deploy.0 = Master|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x64.ActiveCfg = Master|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x64.Build.0 = Master|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x64.Deploy.0 = Master|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x86.ActiveCfg = Master|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x86.Build.0 = Master|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x86.Deploy.0 = Master|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|ARM.ActiveCfg = Release|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|ARM.Build.0 = Release|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|ARM.Deploy.0 = Release|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x64.ActiveCfg = Release|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x64.Build.0 = Release|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x64.Deploy.0 = Release|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.ActiveCfg = Release|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Build.0 = Release|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Deploy.0 = Release|x86
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Debug|ARM.ActiveCfg = Debug|ARM
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Debug|ARM.Build.0 = Debug|ARM
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Debug|x64.ActiveCfg = Debug|x64
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Debug|x64.Build.0 = Debug|x64
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Debug|x86.ActiveCfg = Debug|x86
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Debug|x86.Build.0 = Debug|x86
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Master|ARM.ActiveCfg = Master|ARM
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Master|ARM.Build.0 = Master|ARM
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Master|x64.ActiveCfg = Master|x64
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Master|x64.Build.0 = Master|x64
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Master|x86.ActiveCfg = Master|x86
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Master|x86.Build.0 = Master|x86
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Release|ARM.ActiveCfg = Release|ARM
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Release|ARM.Build.0 = Release|ARM
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Release|x64.ActiveCfg = Release|x64
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Release|x64.Build.0 = Release|x64
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Release|x86.ActiveCfg = Release|x86
+		{FA2FF38C-2F0D-45DA-B931-0D307D38F5E1}.Release|x86.Build.0 = Release|x86
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Debug|ARM.Build.0 = Debug|ARM
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Debug|x64.ActiveCfg = Debug|x64
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Debug|x64.Build.0 = Debug|x64
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Debug|x86.ActiveCfg = Debug|x86
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Debug|x86.Build.0 = Debug|x86
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Master|ARM.ActiveCfg = Master|ARM
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Master|ARM.Build.0 = Master|ARM
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Master|x64.ActiveCfg = Master|x64
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Master|x64.Build.0 = Master|x64
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Master|x86.ActiveCfg = Master|x86
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Master|x86.Build.0 = Master|x86
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Release|ARM.ActiveCfg = Release|ARM
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Release|ARM.Build.0 = Release|ARM
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Release|x64.ActiveCfg = Release|x64
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Release|x64.Build.0 = Release|x64
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Release|x86.ActiveCfg = Release|x86
+		{CA25C666-ED65-41E6-B2A4-27D104662E67}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
