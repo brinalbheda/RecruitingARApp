@@ -13,8 +13,10 @@
     "http-errors": "latest",
     "jade": "latest",
     "morgan": "latest",
+    "multer": "^1.4.1",
+    "multer-s3": "^2.7.0",
+    "node-linkedin": "0.5.6",
     "pug": "latest",
-    "require": "latest",
-    "node-linkedin": "0.5.6"
+    "require": "latest"
   }
 }
