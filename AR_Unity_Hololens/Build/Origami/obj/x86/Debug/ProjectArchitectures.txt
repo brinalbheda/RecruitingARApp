@@ -1,4 +1,0 @@
-C:\Users\gpstudent.VGAMEPIPE\Downloads\HolographicAcademy-1.5.6-101\Origami\Build\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
-C:\Users\gpstudent.VGAMEPIPE\Downloads\HolographicAcademy-1.5.6-101\Origami\Build\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
-C:\Users\gpstudent.VGAMEPIPE\Downloads\HolographicAcademy-1.5.6-101\Origami\Build\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
-C:\Users\gpstudent.VGAMEPIPE\Downloads\HolographicAcademy-1.5.6-101\Origami\Build\Origami\Origami.csproj;x86
