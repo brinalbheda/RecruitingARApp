@@ -179,7 +179,37 @@ app.post('/data', upload.single('file'), function (req, res) {
 	console.log(photoUrl);
 	res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
 });
-
+app.post('/postreq', function (req, res) {
+	var currentdate = new Date();
+	var datetime = "Call sent at: " + currentdate.getDate() + "/"
+		+ (currentdate.getMonth() + 1) + "/"
+		+ currentdate.getFullYear() + " @ "
+		+ currentdate.getHours() + ":"
+		+ currentdate.getMinutes() + ":"
+		+ currentdate.getSeconds();
+	console.log(datetime);
+	var base64 = req.body.base64string;
+	console.log(base64);
+	var buf = new Buffer(base64);
+	var data = {
+		Key: "testImage",
+		Body: buf,
+		ContentEncoding: 'base64',
+		ContentType: 'image/jpeg'
+	};
+	var s3Bucket = new AWS.S3({ params: { Bucket: 'arvrbucket2018' } });
+	s3Bucket.putObject(data, function (err, data) {
+		if (err) {
+			console.log(err);
+			console.log('Error uploading data: ', data);
+		} else {
+			console.log('succesfully uploaded the image!');
+			console.log("\n Photo URL on S3:\n")
+			console.log(data);
+			res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
+		}
+	});
+});
 app.get('/testget', function (req, resp) {
 	resp.send("sample response for get");
 });
