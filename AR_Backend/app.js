@@ -181,41 +181,29 @@ app.post('/data', upload.single('file'), function (req, res) {
 });
 
 app.post('/postreq', function (req, res) {
-    console.log(req.body)
     var base64Data = req.body.base64string;
-    console.log(base64Data);
-    require("fs").writeFile("out.jpg", base64Data, 'base64', function(err) {
-        console.log(err);
-    });
-    // Generally we'd have a userId associated with the image
-    // For this example, we'll simulate one
-        var userId = 1;
-
-    // With this setup, each time your user uploads an image, will be overwritten.
-    // To prevent this, use a unique Key each time.
-    // This won't be needed if they're uploading their avatar, hence the filename, userAvatar.js.
+	var buf = new Buffer(base64Data, 'base64');
         var params = {
-            //Bucket: process.env.s3_BUCKET,
-            Key: '${userId}', // type is not required
-            Body: base64Data,
+            Bucket: 'arvrbucket2018',
+            Key: 'upload_image', 
+            Body: buf,
             ACL: 'public-read',
-            ContentEncoding: 'base64', // required
-            ContentType: 'image/jpg' // required. Notice the back ticks
+            ContentEncoding: 'base64',
+            ContentType: 'image/jpg' 
         }
 
-    var s3Bucket = new AWS.S3({ params: { Bucket: 'arvrbucket2018' } });
-
-    // The upload() is used instead of putObject() as we'd need the location url and assign that to our user profile/database
-    // see: http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#upload-property
+	var s3Bucket = new AWS.S3();
+	
         s3Bucket.upload(params, function(err, data) {
             if (err) {
                 return console.log(err)
             }
-
-            // Continue if no error
-            // Save data.Location in your database
-            console.log('Image successfully uploaded.');
-        });
+			console.log('Image successfully uploaded.');
+			var photoUrl = data[location]
+			console.log("\n Photo URL on S3:\n")
+			console.log(photoUrl);
+			res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
+		});
 })
 
 app.get('/testget', function (req, resp) {
