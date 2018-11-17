@@ -33,14 +33,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use(bodyParser.json({ limit: '50mb' }));
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true}));
+
 
 app.get('/oauth/linkedin', function (req, res) {
 	var scope = ['r_basicprofile', 'r_emailaddress'];
@@ -181,7 +182,7 @@ app.post('/data', upload.single('file'), function (req, res) {
 });
 
 app.post('/postreq', function (req, res) {
-    var base64Data = req.body.base64string;
+	var base64Data = req.body.img;
 	var buf = new Buffer(base64Data, 'base64');
         var params = {
             Bucket: 'arvrbucket2018',
@@ -199,7 +200,8 @@ app.post('/postreq', function (req, res) {
                 return console.log(err)
             }
 			console.log('Image successfully uploaded.');
-			var photoUrl = data[location]
+			console.log(data);
+			var photoUrl = data.Location;
 			console.log("\n Photo URL on S3:\n")
 			console.log(photoUrl);
 			res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
@@ -426,7 +428,7 @@ function getPersonId(identifyResponse) {
 }
 
 
-var port = process.env.PORT || 8095;
+var port = process.env.PORT || 8002;
 app.listen(port, function () {
 	console.log("Server started on port " + port);
 });
