@@ -33,15 +33,16 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use(bodyParser.json({ limit: '50mb' }));
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true}));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
+app.get('/', function (req, res) {
+	res.sendFile(__dirname + '/index.html');
+});
 
 app.get('/oauth/linkedin', function (req, res) {
 	var scope = ['r_basicprofile', 'r_emailaddress'];
@@ -166,14 +167,14 @@ var upload = multer({
 	})
 });
 
-app.post('/data', upload.single('file'), function (req, res) {
-	var currentdate = new Date(); 
+app.post('/data', upload.single('file'), function (req, res) {	
+	var currentdate = new Date();
 	var datetime = "Call sent at: " + currentdate.getDate() + "/"
-                + (currentdate.getMonth()+1)  + "/" 
-                + currentdate.getFullYear() + " @ "  
-                + currentdate.getHours() + ":"  
-                + currentdate.getMinutes() + ":" 
-                + currentdate.getSeconds();
+		+ (currentdate.getMonth() + 1) + "/"
+		+ currentdate.getFullYear() + " @ "
+		+ currentdate.getHours() + ":"
+		+ currentdate.getMinutes() + ":"
+		+ currentdate.getSeconds();
 	console.log(datetime);
 	var photoUrl = req.file.location;
 	console.log("\n Photo URL on S3:\n")
@@ -182,7 +183,15 @@ app.post('/data', upload.single('file'), function (req, res) {
 });
 
 app.post('/postreq', function (req, res) {
-	var base64Data = req.body.img;
+	var currentdate = new Date();
+	var datetime = "Call sent at: " + currentdate.getDate() + "/"
+		+ (currentdate.getMonth() + 1) + "/"
+		+ currentdate.getFullYear() + " @ "
+		+ currentdate.getHours() + ":"
+		+ currentdate.getMinutes() + ":"
+		+ currentdate.getSeconds();
+	console.log(datetime);
+    var base64Data = req.body.img;
 	var buf = new Buffer(base64Data, 'base64');
         var params = {
             Bucket: 'arvrbucket2018',
@@ -200,11 +209,76 @@ app.post('/postreq', function (req, res) {
                 return console.log(err)
             }
 			console.log('Image successfully uploaded.');
-			console.log(data);
 			var photoUrl = data.Location;
 			console.log("\n Photo URL on S3:\n")
 			console.log(photoUrl);
-			res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
+			var sampleresp = {
+				"firstName": "Anandi",
+				"id": "HycXL29Sge",
+				"industry": "Computer Software",
+				"lastName": "Bharwani",
+				"positions": {
+					"_total": 0
+				},
+				"courses": [
+					"AR/VR",
+					"OS",
+					"Web Technologies",
+					"Algorithms"
+				],
+				"skills": [
+					"C++",
+					"Python",
+					"Linux",
+					"SQL"
+				],
+				"education": [
+					{
+						"degree": "Master's Of Science - MS,Computer Science",
+						"university": "University Of Southern California",
+						"duration": "2017-2019"
+					},
+					{
+						"degree": "Bachelor Of Technology - Btech,Computer Science",
+						"university": "National Institute Of Technology Durgapur",
+						"duration": "2011-2015"
+					}
+				],
+				"experience": [
+					{
+						"position": "Deep Learning Architect Intern",
+						"company": "NVIDIA",
+						"duration": "Jun 2018 - Aug 2018",
+						"description": [
+							"Developed a machine learning model to predict anomaly in an ongoing live production data by training log sequences.", 
+							"Reduced manual work by recognizing anomalies in the network that might lead to issues in the future."
+						] 
+					},
+					{
+						"position": "Software Engineer I",
+						"company": "Micro Focus",
+						"duration": "Jul 2015 - Jun 2017",
+						"description": [
+							"Delivered a project on Systems, Application and Products (SAP) software, one of the leading enterprise application software. ", 
+							"Executed components of SAP-R3 software in development of Material Management module to develop Procure to Pay process involving procurement, data acquisition and storage."
+						]
+					}
+				],
+				"metrics":{
+					"skills":{
+						"required": 10,
+						"matching": 6,
+						"missing": ["Java", "JavaScript", "HTML", "CSS", "Angular"]
+					},
+					"experience":{
+						"required": 3,
+						"current": 2
+					},
+					"score": 70
+				}
+			 };
+			//res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
+			res.send(sampleresp);
 		});
 })
 
@@ -428,7 +502,7 @@ function getPersonId(identifyResponse) {
 }
 
 
-var port = process.env.PORT || 8002;
+var port = process.env.PORT || 8095;
 app.listen(port, function () {
 	console.log("Server started on port " + port);
 });
