@@ -1,0 +1,59 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+<script>
+        function submitDetails() {
+            var element = document.getElementById("iPosition");
+            element.value = "";
+            element.defaultValue = "";
+            var element1 = document.getElementById("iLang");
+            element1.value = "";
+            element1.defaultValue = "";
+            var element2 = document.getElementById("iTools");
+            element2.value = "";
+            element2.defaultValue = "";
+        }
+    </script>
+</head>
+<body>
+<style>
+body {
+  background: #fafafa;
+  padding: 10px;
+}
+h1 { margin-top: 0; }
+</style>
+<div class="col-md-8 col-md-offset-2">
+  <div class="text-center">
+    <h1>Recruiter Preference Portal</h1>
+  </div>
+  <div class="container" style="margin-top:45px;">
+    <div class="row">
+      <div class="form-group">
+        <label for="Position">Position</label>
+        <input id="iPosition" type="text" value="Full time,Co-op,Internship" data-role="tagsinput" class="form-control" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label for="lang">Languages</label>
+        <input id="iLang" type="text" value="Python,R,Java,SQL" data-role="tagsinput" class="form-control" />
+      </div>
+    </div>
+    <div class = "row">
+      <div class="form-group">
+        <label for="tools">Tools</label>
+        <input id="iTools" type="text" value="Git,SonarQube,Jenkins" data-role="tagsinput" class="form-control" />
+      </div>
+    </div>
+  </div>
+  <div class="text-center" style="margin-top:45px;">
+    <button type="button" class="btn btn-dark" onclick="submitDetails()">Save</button>
+  </div>
+</div>
+</body>
+</html>
