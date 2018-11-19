@@ -87,6 +87,20 @@ app.get('/linkedin/profile', function (req, res) {
 		body.skills = details.skills;
 		body.education = details.education;
 		body.experience = details.experience;
+		body.experience[0].description = "Developed a machine learning model to predict anomaly in an ongoing live production data by training log sequences.";
+		body.experience[1].description = "Delivered a project on Systems, Application and Products (SAP) software, one of the leading enterprise application software.";
+		body.metrics = {
+			"skills": {
+				"required": 10,
+				"matching": 6,
+				"missing": ["Java", "JavaScript", "HTML", "Angular"]
+			},
+			"experience": {
+				"required": 3,
+				"current": 2
+			},
+			"score": 70
+		};
 		console.log("\nLinkedIn Profile Details:\n");
 		console.log(body);
 		res.send(body);
@@ -128,7 +142,7 @@ app.get('/identify', function (req, resp) {
 	var faceIds = req.query.faceIds.split(',');
 	var identifyBody = {
 		"faceIds": faceIds,
-		"personGroupId": "linkedinproject007"
+		"personGroupId": "1"
 	};
 	var options = {
 		uri: identifyUrl,
@@ -167,7 +181,7 @@ var upload = multer({
 	})
 });
 
-app.post('/data', upload.single('file'), function (req, res) {	
+app.post('/data', upload.single('file'), function (req, res) {
 	var currentdate = new Date();
 	var datetime = "Call sent at: " + currentdate.getDate() + "/"
 		+ (currentdate.getMonth() + 1) + "/"
@@ -191,95 +205,29 @@ app.post('/postreq', function (req, res) {
 		+ currentdate.getMinutes() + ":"
 		+ currentdate.getSeconds();
 	console.log(datetime);
-    var base64Data = req.body.img;
+	var base64Data = req.body.img;
 	var buf = new Buffer(base64Data, 'base64');
-        var params = {
-            Bucket: 'arvrbucket2018',
-            Key: 'upload_image', 
-            Body: buf,
-            ACL: 'public-read',
-            ContentEncoding: 'base64',
-            ContentType: 'image/jpg' 
-        }
+	var params = {
+		Bucket: 'arvrbucket2018',
+		Key: 'upload_image',
+		Body: buf,
+		ACL: 'public-read',
+		ContentEncoding: 'base64',
+		ContentType: 'image/jpg'
+	}
 
 	var s3Bucket = new AWS.S3();
-	
-        s3Bucket.upload(params, function(err, data) {
-            if (err) {
-                return console.log(err)
-            }
-			console.log('Image successfully uploaded.');
-			var photoUrl = data.Location;
-			console.log("\n Photo URL on S3:\n")
-			console.log(photoUrl);
-			var sampleresp = {
-				"firstName": "Anandi",
-				"id": "HycXL29Sge",
-				"industry": "Computer Software",
-				"lastName": "Bharwani",
-				"positions": {
-					"_total": 0
-				},
-				"courses": [
-					"AR/VR",
-					"OS",
-					"Web Technologies",
-					"Algorithms"
-				],
-				"skills": [
-					"C++",
-					"Python",
-					"Linux",
-					"SQL"
-				],
-				"education": [
-					{
-						"degree": "Master's Of Science - MS,Computer Science",
-						"university": "University Of Southern California",
-						"duration": "2017-2019"
-					},
-					{
-						"degree": "Bachelor Of Technology - Btech,Computer Science",
-						"university": "National Institute Of Technology Durgapur",
-						"duration": "2011-2015"
-					}
-				],
-				"experience": [
-					{
-						"position": "Deep Learning Architect Intern",
-						"company": "NVIDIA",
-						"duration": "Jun 2018 - Aug 2018",
-						"description": [
-							"Developed a machine learning model to predict anomaly in an ongoing live production data by training log sequences.", 
-							"Reduced manual work by recognizing anomalies in the network that might lead to issues in the future."
-						] 
-					},
-					{
-						"position": "Software Engineer I",
-						"company": "Micro Focus",
-						"duration": "Jul 2015 - Jun 2017",
-						"description": [
-							"Delivered a project on Systems, Application and Products (SAP) software, one of the leading enterprise application software. ", 
-							"Executed components of SAP-R3 software in development of Material Management module to develop Procure to Pay process involving procurement, data acquisition and storage."
-						]
-					}
-				],
-				"metrics":{
-					"skills":{
-						"required": 10,
-						"matching": 6,
-						"missing": ["Java", "JavaScript", "HTML", "CSS", "Angular"]
-					},
-					"experience":{
-						"required": 3,
-						"current": 2
-					},
-					"score": 70
-				}
-			 };
-			//res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
-			res.send(sampleresp);
-		});
+
+	s3Bucket.upload(params, function (err, data) {
+		if (err) {
+			return console.log(err)
+		}
+		console.log('Image successfully uploaded on S3.');
+		var photoUrl = data.Location;
+		console.log("\n Photo URL on S3:\n")
+		console.log(photoUrl);
+		res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
+	});
 })
 
 app.get('/testget', function (req, resp) {
@@ -290,7 +238,7 @@ app.post('/testpost', function (req, resp) {
 });
 
 var personDictionary = {
-	"af7e6fce-32f8-46b2-aaff-0a55be8c0f90": {
+	"21bc1004-c428-4556-a59b-676e484c5ff4": {
 		name: "Dhanashri Tidke",
 		userUrl: "https://www.linkedin.com/in/dhanashritidke/",
 		courses: ["Analysis of Algorithms", "Applied Natural Language Processing", "Augmented, Virtual and Mixed Reality", "Foundations of Artificial Intelligence"],
@@ -315,7 +263,7 @@ var personDictionary = {
 			duration: "Jul 2015 - Dec 2017"
 		}]
 	},
-	"a107e2d9-ceb0-43cf-8a7f-85903c961efb": {
+	"140fc9f8-53b3-47ff-a013-3ddc26222902": {
 		name: "Divyata Singh",
 		userUrl: "https://www.linkedin.com/in/divyata-singh/",
 		courses: ["Analysis of Algorithms", "Foundations of Artificial Intelligence", "Applied Natural Language Processing", "Augmented, Virtual and Mixed Reality", "Web Technologies", "Information Retrieval and Web Search Engines"],
@@ -340,7 +288,7 @@ var personDictionary = {
 			duration: "Jul 2015 - Jul 2017"
 		}]
 	},
-	"12e2274e-e666-4658-9051-f24783a01cdc": {
+	"3360a30c-2b0a-42f4-906d-e9c145648c08": {
 		name: "Dhruv Bajpai",
 		userUrl: "https://www.linkedin.com/in/dhruv-bajpai/",
 		courses: ["Analysis of Algorithms", "Foundations of Artificial Intelligence", "Applied Natural Language Processing", "Augmented, Virtual and Mixed Reality", "Machine Learning", "Database Systems"],
@@ -365,7 +313,7 @@ var personDictionary = {
 			duration: "Jul 2016 - Jul 2017"
 		}]
 	},
-	"385d778a-e724-4dba-a536-6fe5336b3740": {
+	"681fac75-f09b-4843-8304-2f92fbadc4d8": {
 		name: "Brinal Bheda",
 		userUrl: "https://www.linkedin.com/in/brinalbheda/",
 		courses: ["Advanced Mobile Devices and Game Consoles", "Computer Networks", "Digital Signal Processing", "Internet and Cloud Computing"],
@@ -390,7 +338,7 @@ var personDictionary = {
 			duration: "Jun 2016 - Jul 2017"
 		}]
 	},
-	"132e763e-16fa-4f71-9950-893543cae7aa": {
+	"a9e60552-fe8e-4962-aabf-03591622a4ca": {
 		name: "Shivi Verma",
 		userUrl: "https://www.linkedin.com/in/shivi-verma-a52574114/",
 		courses: ["OS", "AR/VR", "Algorithms", "Web technologies"],
@@ -415,7 +363,7 @@ var personDictionary = {
 			duration: "Jul 2016 - Aug 2016"
 		}]
 	},
-	"2d4a5bcc-766c-4093-8a24-2fb7cf0e57fa": {
+	"4c8d09e8-4d3e-485c-bac0-2aedf51cd852": {
 		name: "Anandi Bharwani",
 		userUrl: "https://www.linkedin.com/in/anandi-bharwani-873205a1/",
 		courses: ["AR/VR", "OS", "Web Technologies", "Algorithms"],
@@ -440,7 +388,7 @@ var personDictionary = {
 			duration: "Jul 2015 - Jun 2017"
 		}]
 	},
-	"8b0f736b-c16a-447b-812b-9a0ff938b15b": {
+	"7f8f8f7f-bbf0-49bf-9425-47d68bdb96b0": {
 		name: "Varun Manocha",
 		userUrl: "https://www.linkedin.com/in/manochav/",
 		courses: ["Algorithms", "Web technologies", "Database Systems", "AR/VR"],
@@ -479,7 +427,7 @@ function getPublicUrl(id) {
  */
 function getPersonId(identifyResponse) {
 	var personId = [];
-	var confidence = []; 
+	var confidence = [];
 	for (var i = 0; i < identifyResponse.length; i++) {
 		if (identifyResponse[i].candidates.length > 0) {
 			personId.push(identifyResponse[i].candidates[0].personId);
