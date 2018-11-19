@@ -198,13 +198,13 @@ app.post('/data', upload.single('file'), function (req, res) {
 
 app.post('/postreq', function (req, res) {
 	var currentdate = new Date();
-	var datetime = "Call sent at: " + currentdate.getDate() + "/"
-		+ (currentdate.getMonth() + 1) + "/"
-		+ currentdate.getFullYear() + " @ "
-		+ currentdate.getHours() + ":"
-		+ currentdate.getMinutes() + ":"
+	var datetime = ""+currentdate.getDate() +
+		+ (currentdate.getMonth() + 1) +
+		+ currentdate.getFullYear() +
+		+ currentdate.getHours() +
+		+ currentdate.getMinutes() +
 		+ currentdate.getSeconds();
-	console.log(datetime);
+
 	var base64Data = req.body.img;
 	var buf = new Buffer(base64Data, 'base64');
 	var params = {
@@ -450,7 +450,7 @@ function getPersonId(identifyResponse) {
 }
 
 
-var port = process.env.PORT || 8095;
+var port = process.env.PORT || 8002;
 app.listen(port, function () {
 	console.log("Server started on port " + port);
 });
