@@ -209,7 +209,7 @@ app.post('/postreq', function (req, res) {
 	var buf = new Buffer(base64Data, 'base64');
 	var params = {
 		Bucket: 'arvrbucket2018',
-		Key: 'upload_image',
+		Key: 'upload_image'+datetime,
 		Body: buf,
 		ACL: 'public-read',
 		ContentEncoding: 'base64',
