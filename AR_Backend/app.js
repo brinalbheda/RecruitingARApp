@@ -16,7 +16,8 @@ var multer = require('multer');
 var multerS3 = require('multer-s3');
 AWS.config.loadFromPath('aws.config.json');
 var s3 = new AWS.S3();
-const access_token = "";
+var role = "";
+const access_token = "AQUN_9Cnw2oOnKWiWm3Z_5u27IqtJ8jShzi_SjRivbP3C_9rolJtdVcvikJc8cvvKbmhX6V_RLFvULTC0P2PlTHW_dYbESrqNAyxqZWatB4-8ZLg7Kw4D9B_iZ0iDW2mR9H0iE7NVPICxi_Oel95ZH6d9xxArP-knPXjuFDu_amSNBhfnmxL3awaicmFC6JGTV8IF6aKUMx3q2dHLRc64WHRBd5ZPByPBcAFcwdEXWC5tEfcEWoOQWA4x8LkQgznGZGx0fXH6yXrWCp6wFeVOKiN2vUJQo5qnH5uQ5Yb6O1mFp2RGCm3mxw_lweeDJvEzEJFRzgkCni3nOi-BDy6O5djp_6_5w";
 const params = {
 	'returnFaceId': 'true'
 };
@@ -87,22 +88,69 @@ app.get('/linkedin/profile', function (req, res) {
 		body.skills = details.skills;
 		body.education = details.education;
 		body.experience = details.experience;
-		body.experience[0].description = "Developed a machine learning model to predict anomaly in an ongoing live production data by training log sequences.";
-		body.experience[1].description = "Delivered a project on Systems, Application and Products (SAP) software, one of the leading enterprise application software.";
+		var experience = details.experience;
+
+		// calculate education score
+		var educationScore = 0;
+
+		if(details.is_grad == "true"){
+			console.log("Is grad student");
+			educationScore = educationScore + 1;
+		}
+		if(details.is_ugrad == "true"){
+			console.log("Is under grad student");
+			educationScore = educationScore + 1;
+		}
+
+		educationScore = (educationScore/2) * 25;
+
+
+		// calculate experience score
+		var total_experience = 0;
+		for(var i = 0 ; i < experience.length ; i++){
+			var duration = experience[i].duration;
+			total_experience= total_experience + calculateExperience(duration);
+		}
+		total_experience_months = total_experience;
+		total_experience = parseInt(total_experience/12);
+		if(total_experience_months % 12 > 6){
+			total_experience = total_experience + 1;
+		}
+		var experienceScore = (total_experience/parseInt(skillroleDictionary.experience)) * 25;
+
+		//calculate skills score
+		var candidateSkillsArr = details.skills;
+		var requiredSkillsArr = skillroleDictionary[global.role];
+		var missingSkillsArr = [];
+
+		var j = 0;
+
+		for(var i = 0 ;i<requiredSkillsArr.length;i++){
+			if(candidateSkillsArr.indexOf(requiredSkillsArr[i])== -1)
+				missingSkillsArr[j++] = requiredSkillsArr[i];
+
+		}
+		var matching = requiredSkillsArr.length - missingSkillsArr.length
+
+		var skillsScore = (matching / requiredSkillsArr.length) * 50;
+
+		var totalScore  = parseInt(experienceScore + skillsScore + educationScore);
+
+
 		body.metrics = {
 			"skills": {
-				"required": 10,
-				"matching": 6,
-				"missing": ["Java", "JavaScript", "HTML", "Angular"]
+				"required": requiredSkillsArr.length,
+				"matching": matching,
+				"missing": missingSkillsArr,
 			},
 			"experience": {
-				"required": 3,
-				"current": 2
+				"required": skillroleDictionary.experience,
+				"current": total_experience
 			},
-			"score": 70
+			"score": totalScore
 		};
+
 		console.log("\nLinkedIn Profile Details:\n");
-		console.log(body);
 		res.send(body);
 	});
 });
@@ -189,7 +237,7 @@ app.post('/data', upload.single('file'), function (req, res) {
 		+ currentdate.getHours() + ":"
 		+ currentdate.getMinutes() + ":"
 		+ currentdate.getSeconds();
-	console.log(datetime);
+	global.role = req.body.role;
 	var photoUrl = req.file.location;
 	console.log("\n Photo URL on S3:\n")
 	console.log(photoUrl);
@@ -206,6 +254,7 @@ app.post('/postreq', function (req, res) {
 		+ currentdate.getSeconds();
 
 	var base64Data = req.body.img;
+	global.role = req.body.role;
 	var buf = new Buffer(base64Data, 'base64');
 	var params = {
 		Bucket: 'arvrbucket2018',
@@ -217,7 +266,6 @@ app.post('/postreq', function (req, res) {
 	}
 
 	var s3Bucket = new AWS.S3();
-
 	s3Bucket.upload(params, function (err, data) {
 		if (err) {
 			return console.log(err)
@@ -236,6 +284,13 @@ app.get('/testget', function (req, resp) {
 app.post('/testpost', function (req, resp) {
 	resp.send("sample response for post:" + req.body.name);
 });
+var skillroleDictionary = {
+	"sw_engineer" : ["Github","C++","Java","OOPS","Python"],
+	"hw_engineer" : ["Verilog","System Design"],
+	"data_scientist" : ["TensorFlow" , "Keras" , "Python" ,"Pandas","Data Analysis"],
+	"web_developer" : ["Nodejs","Mysql","Angular JS","AWS","GCP","JavaScript"],
+	"experience" : "5"
+}
 
 var personDictionary = {
 	"21bc1004-c428-4556-a59b-676e484c5ff4": {
@@ -255,12 +310,14 @@ var personDictionary = {
 		experience: [{
 			position: "Summer Intern",
 			company: "Information Sciences Institute",
-			duration: "May 2018 - Present"
+			duration: "May 2018 - Nov 2018",
+			description: "Worked on code quality control for Chaise, a model driven web interface , wrote teste cases using Selenium to eleveate coverage. "
 		},
 		{
 			position: "Software Engineer",
 			company: "eQ Technologic",
-			duration: "Jul 2015 - Dec 2017"
+			duration: "Jul 2015 - Dec 2017",
+			description:"Developed Conversational Agent, worked on ontology and knowledge represntation tasks."
 		}]
 	},
 	"140fc9f8-53b3-47ff-a013-3ddc26222902": {
@@ -280,13 +337,17 @@ var personDictionary = {
 		experience: [{
 			position: "Web Developer",
 			company: "Information Sciences Institute",
-			duration: "May 2018 - Present"
+			duration: "May 2018 - Nov 2018",
+			description: "Developed features for an open source and model driven web application, also created UI for the same using angular js,bootstrap ,plotly."
 		},
 		{
 			position: "Software Engineer",
 			company: "Schlumberger",
-			duration: "Jul 2015 - Jul 2017"
-		}]
+			duration: "Jul 2015 - Jul 2017",
+			description: "Involved in the development, testing & deployment of a project, which integrated multiple E&P data platforms in an Agile environment"
+		}],
+		is_grad : "true",
+		is_ugrad : "true"
 	},
 	"3360a30c-2b0a-42f4-906d-e9c145648c08": {
 		name: "Dhruv Bajpai",
@@ -305,13 +366,17 @@ var personDictionary = {
 		experience: [{
 			position: "Software Development Intern",
 			company: "Expedia Group",
-			duration: "May 2018 - Aug 2018"
+			duration: "May 2018 - Aug 2018",
+			description: "Automated the launch-test/learn process used by Campaign Managers for destination ad-campaigns on Facebook Marketing channel."
 		},
 		{
 			position: "Technical Specialist",
 			company: "Mindtree",
-			duration: "Jul 2016 - Jul 2017"
-		}]
+			duration: "Jul 2016 - Jul 2017",
+			description: " Worked on state of the art deep learning solutions for custom vision and text problems - Object Recognition/Image Classification models"
+		}],
+		is_grad : "true",
+		is_ugrad : "true"
 	},
 	"681fac75-f09b-4843-8304-2f92fbadc4d8": {
 		name: "Brinal Bheda",
@@ -330,13 +395,17 @@ var personDictionary = {
 		experience: [{
 			position: "Graduate Research Assistant",
 			company: "University Of Southern California",
-			duration: "May 2018-Aug 2018"
+			duration: "May 2018-Aug 2018",
+			description: "Worked on a project named ’IOT Smart Desk’, wherein the user feedback from the application and data from different sensors will be used to learn the user's comfort preferences"
 		},
 		{
 			position: "Human Resources And Development Chairperson",
 			company: "Rotaract Club of King's Circle, Matunga",
-			duration: "Jun 2016 - Jul 2017"
-		}]
+			duration: "Jun 2016 - Jul 2017",
+			description: "Organized various events for general social welfare."
+		}],
+		is_grad : "true",
+		is_ugrad : "true"
 	},
 	"a9e60552-fe8e-4962-aabf-03591622a4ca": {
 		name: "Shivi Verma",
@@ -355,13 +424,17 @@ var personDictionary = {
 		experience: [{
 			position: "Software Engineering Intern",
 			company: "Viasat Inc.",
-			duration: "May 2018 - Aug 2018"
+			duration: "May 2018 - Aug 2018",
+			description: "Developed a machine learning model to predict anomaly in an ongoing live production data by training log sequences."
 		},
 		{
 			position: "Intern (SAP MM)",
 			company: "BSES Delhi",
-			duration: "Jul 2016 - Aug 2016"
-		}]
+			duration: "Jul 2016 - Aug 2016",
+			description: "Delivered a project on Systems, Application and Products (SAP) software, one of the leading enterprise application software. "
+		}],
+		is_grad : "true",
+		is_ugrad : "true"
 	},
 	"4c8d09e8-4d3e-485c-bac0-2aedf51cd852": {
 		name: "Anandi Bharwani",
@@ -380,13 +453,17 @@ var personDictionary = {
 		experience: [{
 			position: "Deep Learning Architect Intern",
 			company: "NVIDIA",
-			duration: "Jun 2018 - Aug 2018"
+			duration: "Jun 2018 - Aug 2018",
+			description: "Worked on developing and training deep learning models."
 		},
 		{
 			position: "Software Engineer I",
 			company: "Micro Focus",
-			duration: "Jul 2015 - Jun 2017"
-		}]
+			duration: "Jul 2015 - Jun 2017",
+			description: "Worked with file systems."
+		}],
+		is_grad : "true",
+		is_ugrad : "true"
 	},
 	"7f8f8f7f-bbf0-49bf-9425-47d68bdb96b0": {
 		name: "Varun Manocha",
@@ -405,13 +482,17 @@ var personDictionary = {
 		experience: [{
 			position: "Software Engeering Intern",
 			company: "Viasat Inc.",
-			duration: "May 2018 - Aug 2018"
+			duration: "May 2018 - Aug 2018",
+			description: "Worked on developing a cross platform tool, Instrumentation Browser, for debugging of log files generated by modems."
 		},
 		{
 			position: "Intern As Software Developer",
 			company: "Ecom Express Pvt. Ltd.",
-			duration: "Dec 2016 - May 2017"
-		}]
+			duration: "Dec 2016 - May 2017",
+			description: "Implemented a Customer Ticket Management System for control tower team,transitioning from an email based communication channel to an accountable web app. "
+		}],
+		is_grad : "true",
+		is_ugrad : "true"
 	}
 };
 
@@ -449,8 +530,39 @@ function getPersonId(identifyResponse) {
 	}
 }
 
+function calculateExperience(duration){
+	var duration_split = duration.split('-');
+	var start = duration_split[0].trim().split(" ");
+	var end = duration_split[1].trim().split(" ");
+	var start_month  = start[0].trim().toLowerCase();
+	var start_year = start[1].trim();
+	var end_month = end[0].trim().toLowerCase();
+	var end_year = end[1].trim();
 
-var port = process.env.PORT || 8002;
+	var monthMapping = {
+		jan:'01',
+		feb: '02',
+		mar: '03',
+		apr: '04',
+		may: '05',
+		jun: '06',
+		jul: '07',
+		aug: '08',
+		sept: '09',
+		oct: '10',
+		nov: '11',
+		dec: '12'
+
+	}
+	var start_month = monthMapping[start_month];
+	var end_month = monthMapping[end_month];
+	var start_date = new Date(start_year,start_month);
+	var end_date = new Date(end_year,end_month);
+	return parseInt((end_date - start_date) / (1000 * 60 * 60 * 24 * 30)); ;
+
+}
+
+var port = process.env.PORT || 8003;
 app.listen(port, function () {
 	console.log("Server started on port " + port);
 });
