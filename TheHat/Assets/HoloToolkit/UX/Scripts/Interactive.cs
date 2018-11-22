@@ -187,7 +187,7 @@ namespace HoloToolkit.Examples.InteractiveElements
 
             //Stop Camera and load next scene
             //--photoManager.StopCamera();
-            SceneManager.LoadSceneAsync(2);
+            SceneManager.LoadSceneAsync(3);
 
             Debug.Log("Input clicked");
         }
