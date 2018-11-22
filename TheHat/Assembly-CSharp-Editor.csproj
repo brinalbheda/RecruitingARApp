@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{62FF2BE0-6A1C-B0D5-835B-91C5B1E3BB72}</ProjectGuid>
+    <ProjectGuid>{3F6D02D9-5DB6-74D9-EB38-34495BAAF6AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -144,10 +144,10 @@
     <None Include="Assets\Editor\Vuforia\ForPrint\ModelTarget\readme_3dprint.txt" />
     <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\VuforiaMars_Images\authoringinfo.xml" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MetroSupport/Tools/UnityEngine.AIModule.dll</HintPath>
@@ -393,10 +393,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="GLTFSerialization">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/anandi/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -761,59 +761,59 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{6D4778DE-EF8D-E885-8404-6D90607BB4B2}</Project>
+      <Project>{BE623336-904F-DD56-9920-9DC180C73A90}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Internal.Build.csproj">
-      <Project>{B63F02F4-52B9-5094-2697-F5B8003ECDE5}</Project>
+      <Project>{49B32B33-6D34-B5C9-0BC8-53AC78BBE86D}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Internal.Build</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.InputSystem.Inspectors.csproj">
-      <Project>{48B217DB-F4A1-8096-1D47-6628CB29130D}</Project>
+      <Project>{79832587-37C0-31B6-B51A-A93E5C6BA50E}</Project>
       <Name>Microsoft.MixedReality.Toolkit.InputSystem.Inspectors</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Internal.Extensions.EditorClassExtensions.csproj">
-      <Project>{31E6E31C-D931-EE61-7155-42255B080DD0}</Project>
+      <Project>{230A300E-2810-12FD-688D-BF3947F63AE8}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Internal.Extensions.EditorClassExtensions</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.csproj">
-      <Project>{7B7A0A17-9852-8C7B-E00C-5BDFFF0054FD}</Project>
+      <Project>{67A2822C-34F1-B6F6-4F69-CB84B87E829A}</Project>
       <Name>Microsoft.MixedReality.Toolkit</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.SDK.Inspectors.csproj">
-      <Project>{23FCB831-13B9-039E-018B-D8BBD72A8285}</Project>
+      <Project>{4AD31716-333B-293A-E96F-42E0ED22F05D}</Project>
       <Name>Microsoft.MixedReality.Toolkit.SDK.Inspectors</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.SDK.csproj">
-      <Project>{F62922BB-796F-0BFD-DDDF-B739926F0CB6}</Project>
+      <Project>{A67AED5A-A22C-02D3-498D-B46FE820CD15}</Project>
       <Name>Microsoft.MixedReality.Toolkit.SDK</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.InputSystem.csproj">
-      <Project>{72222A61-19ED-6BE7-FEF7-A36007BBEFDB}</Project>
+      <Project>{2C5C6E62-04FC-24DA-3122-7D05B390D648}</Project>
       <Name>Microsoft.MixedReality.Toolkit.InputSystem</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Internal.Definitions.Utilities.Editor.csproj">
-      <Project>{45794A13-4FB4-C92C-9BFB-BBAE644A42A2}</Project>
+      <Project>{164A8B68-F62D-3C9A-832B-A4CEFF980205}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Internal.Definitions.Utilities.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Internal.Utilities.Editor.Setup.csproj">
-      <Project>{1F356A7A-EDD5-56AA-37E0-C347A5B2DA7D}</Project>
+      <Project>{4B579221-C71D-BC40-35D5-65ACAFB505BA}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Internal.Utilities.Editor.Setup</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Internal.Inspectors.csproj">
-      <Project>{7075ED31-4B36-D639-A5EA-8CE51D611EA8}</Project>
+      <Project>{E0CCCD32-F9F2-65B9-C0F6-7C007EAB7AD7}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Internal.Inspectors</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Internal.Utilities.Editor.csproj">
-      <Project>{15885B8F-A216-AB8E-00A7-02AFC2828976}</Project>
+      <Project>{7D1DA3AF-8823-961D-1790-FBAB537FBC15}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Internal.Utilities.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Examples.Demos.StandardShader.Inspectors.csproj">
-      <Project>{2FB3DC89-4307-B5A5-E248-7D6D064D8BEB}</Project>
+      <Project>{ADCCA6A7-791F-91AA-DAAD-22FE88FED993}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Examples.Demos.StandardShader.Inspectors</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Examples.csproj">
-      <Project>{052F3235-1521-E193-3C49-5EA235957762}</Project>
+      <Project>{67F739F4-92BD-19B8-4A01-27FD1A105EA0}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Examples</Name>
     </ProjectReference>
   </ItemGroup>
