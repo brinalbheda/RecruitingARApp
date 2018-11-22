@@ -106,21 +106,20 @@ public class PhotoManager : MonoBehaviour
     public IEnumerator TakePhotos()
     {
 
-        int i = 0;
-        while (i < 3)
+        //int i = 0;
+        while (found == false)
         {
             StartCamera();
             while (!isReady)
                 yield return new WaitForSeconds(2);
-            if (i == 2)
-                found = true;
             TakePhoto();
-            //yield return new WaitForSeconds(2.0f);
-            i++;
+            yield return new WaitForSeconds(1.0f);
+            //i++;
             while (isReady)
                 yield return new WaitForSeconds(2);
         }
         yield return new WaitForSeconds(1);
+        found = false;
     }
 
     /// <summary>
@@ -342,32 +341,38 @@ public class PhotoManager : MonoBehaviour
         {
             print("Request Response: " + www.downloadHandler.text);
             var response = JSON.Parse(www.downloadHandler.text);
-            
 
-            TotalScoreNeedleRotation.ShowScore(response["metrics"]["score"].AsFloat);
-            float curExperience = response["metrics"]["experience"]["current"].AsFloat;
-            float reqExperience = response["metrics"]["experience"]["required"].AsFloat;
-            float matchingSkills = response["metrics"]["skills"]["matching"].AsFloat;
-            float reqSkills = response["metrics"]["skills"]["required"].AsFloat;
-            experienceMeter.fillAmount = curExperience / reqExperience;
-            skillsMeter.fillAmount = matchingSkills / reqSkills;
-            /*Response response = JsonConvert.DeserializeObject<Response>(www.downloadHandler.text);
-            TotalScoreNeedleRotation.ShowScore(response.metrics.score);
-            float curExperience = response.metrics.experience.current;
-            float reqExperience = response.metrics.experience.required;
-            float matchingSkills = response.metrics.skills.matching;
-            float reqSkills = response.metrics.skills.required;
-            experienceMeter.fillAmount = curExperience / reqExperience;
-            skillsMeter.fillAmount = matchingSkills / reqSkills;*/
-
-
-            //found = true;
-            if (found == true)
+            if (response["error"])
             {
+                //StopCamera();
+            }
+            else
+            {
+                found = true;
+
+                //TotalScoreNeedleRotation.ShowScore(response["metrics"]["score"].AsFloat);
+                float curExperience = response["metrics"]["experience"]["current"].AsFloat;
+                float reqExperience = response["metrics"]["experience"]["required"].AsFloat;
+                float matchingSkills = response["metrics"]["skills"]["matching"].AsFloat;
+                float reqSkills = response["metrics"]["skills"]["required"].AsFloat;
+                //experienceMeter.fillAmount = curExperience / reqExperience;
+                //skillsMeter.fillAmount = matchingSkills / reqSkills;
+                /*Response response = JsonConvert.DeserializeObject<Response>(www.downloadHandler.text);
+                TotalScoreNeedleRotation.ShowScore(response.metrics.score);
+                float curExperience = response.metrics.experience.current;
+                float reqExperience = response.metrics.experience.required;
+                float matchingSkills = response.metrics.skills.matching;
+                float reqSkills = response.metrics.skills.required;
+                experienceMeter.fillAmount = curExperience / reqExperience;
+                skillsMeter.fillAmount = matchingSkills / reqSkills;*/
+
                 resObject.SetActive(true);
-                resObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 3.0f;
+                Vector3 newPos = new Vector3(Camera.main.transform.position.x - 0.1f, Camera.main.transform.position.y, Camera.main.transform.position.z);
+                resObject.transform.position = newPos + Camera.main.transform.forward * 1.7f;
+                
 
             }
+
         }
 
         StopCamera();

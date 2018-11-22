@@ -131,7 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\Microsoft.MixedReality.Toolkit.csproj">
-      <Project>{912a03bc-df1a-4e9b-9ca7-de6a270b79dd}</Project>
+      <Project>{42ac1518-7f9e-4404-82e4-ccc031ab8e37}</Project>
       <Name>Microsoft.MixedReality.Toolkit</Name>
     </ProjectReference>
     <Reference Include="UnityEngine.SharedInternalsModule">

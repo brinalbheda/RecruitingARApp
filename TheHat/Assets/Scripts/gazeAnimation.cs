@@ -15,6 +15,9 @@ public class gazeAnimation : MonoBehaviour, IFocusable
     public GameObject mmenufadeout;
     public GameObject mmfadeUI;
 
+    [SerializeField]
+    public PhotoManager photoManager;
+
     // Use this for initialization
     void Start () {
 		
@@ -46,6 +49,7 @@ public class gazeAnimation : MonoBehaviour, IFocusable
     {
         extendedObject.SetActive(false);
 
+        photoManager.startCapturing();
         //mmscene2 = mmbscene;
         //switching = 1;
         //mmenufadeout = extendedObject;

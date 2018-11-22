@@ -5,6 +5,7 @@ SceneListBegin?
 Assets/Scenes/Main.unity
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/PhotoCaptureScene.unity
+Assets/Scenes/DetailsScene.unity
 SceneListEnd?
 7abde016883951c4ca4e7c44ce6adb2c Assembly-CSharp.dll:HoloToolkit.Unity.SceneLauncher
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TotalScoreNeedleRotation
@@ -387,7 +388,7 @@ c64c7f119c6d2a8c3931b7776521b113 Assembly-CSharp.dll:HoloToolkit.Unity.UX.Parabo
 524356edcc2977b98283bcbebbcc6c06 Assembly-CSharp.dll:HoloToolkit.Unity.UX.BoundingBox
 5affa557520c9b1ad67d2162d963829a Assembly-CSharp.dll:HoloToolkit.UI.Keyboard.UICollection
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DefaultTrackableEventHandler
-04d1d552e28b9b81203e73545c7df7f8 Assembly-CSharp.dll:.gazeAnimation
+5eb9ddd8a23ad7976ef3451a4a471a48 Assembly-CSharp.dll:.gazeAnimation
 7abb7178375991ec6e0fcffd060196e9 Assembly-CSharp.dll:HoloToolkit.Examples.UX.ObjectDisplayScript
 50bb1fd665302b112f13ab02760a0fc1 Assembly-CSharp.dll:.Response
 b39fddbe4ede4fafe2e1641885144305 Assembly-CSharp.dll:HoloToolkit.Unity.WorldAnchorManager

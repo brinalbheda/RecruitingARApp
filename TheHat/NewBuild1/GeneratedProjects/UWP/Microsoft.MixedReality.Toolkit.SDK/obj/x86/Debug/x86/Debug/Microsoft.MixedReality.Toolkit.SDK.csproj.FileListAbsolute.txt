@@ -26,3 +26,4 @@ D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Micr
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\qualifiers.txt
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\qualifiers.txt.intermediate
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\bin\x86\Debug\Microsoft.MixedReality.Toolkit.InputSystem.pri

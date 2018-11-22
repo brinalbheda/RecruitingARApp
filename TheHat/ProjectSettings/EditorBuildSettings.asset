@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PhotoCaptureScene.unity
     guid: 99887d77908953840b2e846c0b49e126
+  - enabled: 1
+    path: Assets/Scenes/DetailsScene.unity
+    guid: 0d09ba9f67facac419bd733689bad8b5
   m_configObjects: {}

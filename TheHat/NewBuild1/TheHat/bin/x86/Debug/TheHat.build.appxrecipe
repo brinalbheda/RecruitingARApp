@@ -455,6 +455,9 @@
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level2">
       <PackagePath>Data\level2</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level3">
+      <PackagePath>Data\level3</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
@@ -476,6 +479,9 @@
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets2.assets">
       <PackagePath>Data\sharedassets2.assets</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets3.assets">
+      <PackagePath>Data\sharedassets3.assets</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
@@ -485,6 +491,9 @@
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level2.resS">
       <PackagePath>Data\level2.resS</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level3.resS">
+      <PackagePath>Data\level3.resS</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
     </AppxPackagedFile>
@@ -493,6 +502,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets.resS">
       <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets3.assets.resS">
+      <PackagePath>Data\sharedassets3.assets.resS</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>

@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-22T09:03:48.419</Modified>
+      <Modified>2018-11-22T11:38:07.096</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\TheHat.exe">
       <PackagePath>entrypoint\TheHat.exe</PackagePath>
-      <Modified>2018-11-22T09:03:16.262</Modified>
+      <Modified>2018-11-22T11:37:45.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anandi\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-11-22T09:01:33.208</Modified>
+      <Modified>2018-11-22T11:19:01.743</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -588,23 +588,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-11-22T09:01:06.869</Modified>
+      <Modified>2018-11-22T11:18:38.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-11-22T09:01:03.869</Modified>
+      <Modified>2018-11-22T11:18:36.258</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-11-22T09:00:58.648</Modified>
+      <Modified>2018-11-22T11:18:31.545</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level1">
       <PackagePath>Data\level1</PackagePath>
-      <Modified>2018-11-22T09:00:59.621</Modified>
+      <Modified>2018-11-22T11:18:32.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level2">
       <PackagePath>Data\level2</PackagePath>
-      <Modified>2018-11-22T09:01:00.741</Modified>
+      <Modified>2018-11-22T11:18:32.909</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level3">
+      <PackagePath>Data\level3</PackagePath>
+      <Modified>2018-11-22T11:18:33.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -612,63 +616,75 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-11-22T09:01:06.840</Modified>
+      <Modified>2018-11-22T11:18:38.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-11-22T09:01:04.070</Modified>
+      <Modified>2018-11-22T11:18:36.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2018-11-22T09:01:04.415</Modified>
+      <Modified>2018-11-22T11:18:36.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-11-22T09:01:05.637</Modified>
+      <Modified>2018-11-22T11:18:37.854</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
-      <Modified>2018-11-22T09:01:05.822</Modified>
+      <Modified>2018-11-22T11:18:37.945</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets2.assets">
       <PackagePath>Data\sharedassets2.assets</PackagePath>
-      <Modified>2018-11-22T09:01:05.869</Modified>
+      <Modified>2018-11-22T11:18:37.967</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets3.assets">
+      <PackagePath>Data\sharedassets3.assets</PackagePath>
+      <Modified>2018-11-22T11:18:38.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-11-22T09:00:58.628</Modified>
+      <Modified>2018-11-22T11:18:31.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
-      <Modified>2018-11-22T09:00:59.601</Modified>
+      <Modified>2018-11-22T11:18:32.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level2.resS">
       <PackagePath>Data\level2.resS</PackagePath>
-      <Modified>2018-11-22T09:01:00.725</Modified>
+      <Modified>2018-11-22T11:18:32.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level3.resS">
+      <PackagePath>Data\level3.resS</PackagePath>
+      <Modified>2018-11-22T11:18:33.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
-      <Modified>2018-11-22T09:01:04.214</Modified>
+      <Modified>2018-11-22T11:18:36.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-11-22T09:01:05.550</Modified>
+      <Modified>2018-11-22T11:18:37.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets.resS">
       <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
-      <Modified>2018-11-22T09:01:05.808</Modified>
+      <Modified>2018-11-22T11:18:37.938</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets3.assets.resS">
+      <PackagePath>Data\sharedassets3.assets.resS</PackagePath>
+      <Modified>2018-11-22T11:18:37.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-11-22T09:01:32.823</Modified>
+      <Modified>2018-11-22T11:19:01.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-11-22T09:01:32.829</Modified>
+      <Modified>2018-11-22T11:19:01.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2018-11-22T09:01:05.658</Modified>
+      <Modified>2018-11-22T11:18:37.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat</PackagePath>
@@ -697,259 +713,259 @@
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-11-22T09:03:23.741</Modified>
+      <Modified>2018-11-22T11:20:26.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.770</Modified>
+      <Modified>2018-11-22T11:38:03.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.803</Modified>
+      <Modified>2018-11-22T11:38:03.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.873</Modified>
+      <Modified>2018-11-22T11:38:03.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.938</Modified>
+      <Modified>2018-11-22T11:38:03.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.997</Modified>
+      <Modified>2018-11-22T11:38:03.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.041</Modified>
+      <Modified>2018-11-22T11:38:03.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.096</Modified>
+      <Modified>2018-11-22T11:38:03.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.130</Modified>
+      <Modified>2018-11-22T11:38:03.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.286</Modified>
+      <Modified>2018-11-22T11:38:03.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.321</Modified>
+      <Modified>2018-11-22T11:38:03.863</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.353</Modified>
+      <Modified>2018-11-22T11:38:03.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.385</Modified>
+      <Modified>2018-11-22T11:38:03.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.415</Modified>
+      <Modified>2018-11-22T11:38:03.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestAssetBundleModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAssetBundleModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.443</Modified>
+      <Modified>2018-11-22T11:38:04.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.470</Modified>
+      <Modified>2018-11-22T11:38:04.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.526</Modified>
+      <Modified>2018-11-22T11:38:04.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.554</Modified>
+      <Modified>2018-11-22T11:38:04.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.583</Modified>
+      <Modified>2018-11-22T11:38:04.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.612</Modified>
+      <Modified>2018-11-22T11:38:04.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.643</Modified>
+      <Modified>2018-11-22T11:38:04.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.675</Modified>
+      <Modified>2018-11-22T11:38:04.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.704</Modified>
+      <Modified>2018-11-22T11:38:04.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.722</Modified>
+      <Modified>2018-11-22T11:38:04.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.XRModule.dll">
       <PackagePath>UnityEngine.XRModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.757</Modified>
+      <Modified>2018-11-22T11:38:04.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.805</Modified>
+      <Modified>2018-11-22T11:38:04.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.848</Modified>
+      <Modified>2018-11-22T11:38:04.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.877</Modified>
+      <Modified>2018-11-22T11:38:04.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.902</Modified>
+      <Modified>2018-11-22T11:38:04.520</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:41.937</Modified>
+      <Modified>2018-11-22T11:38:04.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.014</Modified>
+      <Modified>2018-11-22T11:38:04.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.077</Modified>
+      <Modified>2018-11-22T11:38:04.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.134</Modified>
+      <Modified>2018-11-22T11:38:04.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.212</Modified>
+      <Modified>2018-11-22T11:38:04.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.270</Modified>
+      <Modified>2018-11-22T11:38:04.827</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.304</Modified>
+      <Modified>2018-11-22T11:38:04.887</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.332</Modified>
+      <Modified>2018-11-22T11:38:04.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.363</Modified>
+      <Modified>2018-11-22T11:38:04.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-11-22T09:01:20.119</Modified>
+      <Modified>2018-11-22T11:18:50.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.401</Modified>
+      <Modified>2018-11-22T11:38:05.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.430</Modified>
+      <Modified>2018-11-22T11:38:05.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.458</Modified>
+      <Modified>2018-11-22T11:38:05.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.539</Modified>
+      <Modified>2018-11-22T11:38:05.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.581</Modified>
+      <Modified>2018-11-22T11:38:05.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.626</Modified>
+      <Modified>2018-11-22T11:38:05.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.657</Modified>
+      <Modified>2018-11-22T11:38:05.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:42.750</Modified>
+      <Modified>2018-11-22T11:38:05.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-11-22T09:03:43.325</Modified>
+      <Modified>2018-11-22T11:38:05.854</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-11-22T09:03:43.478</Modified>
+      <Modified>2018-11-22T11:38:05.948</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-11-22T09:03:43.573</Modified>
+      <Modified>2018-11-22T11:38:06.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-11-22T09:03:43.802</Modified>
+      <Modified>2018-11-22T11:38:06.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2018-11-22T09:03:43.838</Modified>
+      <Modified>2018-11-22T11:38:06.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-11-22T09:03:43.892</Modified>
+      <Modified>2018-11-22T11:38:06.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-11-22T09:03:43.958</Modified>
+      <Modified>2018-11-22T11:38:06.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
-      <Modified>2018-11-22T09:03:44.065</Modified>
+      <Modified>2018-11-22T11:38:06.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2018-11-22T09:03:44.122</Modified>
+      <Modified>2018-11-22T11:38:06.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-11-22T09:03:44.272</Modified>
+      <Modified>2018-11-22T11:38:06.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
-      <Modified>2018-11-22T09:03:44.358</Modified>
+      <Modified>2018-11-22T11:38:06.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.289</Modified>
+      <Modified>2018-11-22T11:38:03.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.490</Modified>
+      <Modified>2018-11-22T11:38:03.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.SDK.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.SDK.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.576</Modified>
+      <Modified>2018-11-22T11:38:03.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.InputSystem.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.InputSystem.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.650</Modified>
+      <Modified>2018-11-22T11:38:03.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.Examples.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.Examples.dll</PackagePath>
-      <Modified>2018-11-22T09:03:40.720</Modified>
+      <Modified>2018-11-22T11:38:03.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\Core\TheHat.exe">
       <PackagePath>TheHat.exe</PackagePath>
-      <Modified>2018-11-22T09:03:48.408</Modified>
+      <Modified>2018-11-22T11:38:07.086</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
