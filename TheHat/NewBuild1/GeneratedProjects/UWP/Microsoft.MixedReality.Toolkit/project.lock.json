@@ -15780,12 +15780,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit\\Microsoft.MixedReality.Toolkit.csproj",
+      "projectUniqueName": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit\\Microsoft.MixedReality.Toolkit.csproj",
       "projectName": "Microsoft.MixedReality.Toolkit",
-      "projectPath": "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit\\Microsoft.MixedReality.Toolkit.csproj",
-      "projectJsonPath": "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit\\project.json",
+      "projectPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit\\Microsoft.MixedReality.Toolkit.csproj",
+      "projectJsonPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit\\project.json",
       "packagesPath": "C:\\Users\\anandi\\.nuget\\packages\\",
-      "outputPath": "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit\\obj\\",
+      "outputPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\anandi\\AppData\\Roaming\\NuGet\\NuGet.Config",

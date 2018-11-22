@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/PhotoCaptureScene.unity
+- path: Assets/Scenes/DetailsScene.unity
   isLoaded: 1
   isActive: 1

@@ -16197,12 +16197,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\VR project\\TheHat\\NewBuild1\\TheHat\\TheHat.csproj",
+      "projectUniqueName": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\TheHat\\TheHat.csproj",
       "projectName": "TheHat",
-      "projectPath": "D:\\VR project\\TheHat\\NewBuild1\\TheHat\\TheHat.csproj",
-      "projectJsonPath": "D:\\VR project\\TheHat\\NewBuild1\\TheHat\\project.json",
+      "projectPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\TheHat\\TheHat.csproj",
+      "projectJsonPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\TheHat\\project.json",
       "packagesPath": "C:\\Users\\anandi\\.nuget\\packages\\",
-      "outputPath": "D:\\VR project\\TheHat\\NewBuild1\\TheHat\\obj\\",
+      "outputPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\TheHat\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\anandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -16215,17 +16215,17 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
-              "projectPath": "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
             },
-            "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.Examples\\Microsoft.MixedReality.Toolkit.Examples.csproj": {
-              "projectPath": "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.Examples\\Microsoft.MixedReality.Toolkit.Examples.csproj"
+            "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.Examples\\Microsoft.MixedReality.Toolkit.Examples.csproj": {
+              "projectPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.Examples\\Microsoft.MixedReality.Toolkit.Examples.csproj"
             },
-            "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.InputSystem\\Microsoft.MixedReality.Toolkit.InputSystem.csproj": {
-              "projectPath": "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.InputSystem\\Microsoft.MixedReality.Toolkit.InputSystem.csproj"
+            "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.InputSystem\\Microsoft.MixedReality.Toolkit.InputSystem.csproj": {
+              "projectPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.InputSystem\\Microsoft.MixedReality.Toolkit.InputSystem.csproj"
             },
-            "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.SDK\\Microsoft.MixedReality.Toolkit.SDK.csproj": {
-              "projectPath": "D:\\VR project\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.SDK\\Microsoft.MixedReality.Toolkit.SDK.csproj"
+            "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.SDK\\Microsoft.MixedReality.Toolkit.SDK.csproj": {
+              "projectPath": "D:\\VR project\\GitAPP\\RecruitingARApp\\TheHat\\NewBuild1\\GeneratedProjects\\UWP\\Microsoft.MixedReality.Toolkit.SDK\\Microsoft.MixedReality.Toolkit.SDK.csproj"
             }
           }
         }

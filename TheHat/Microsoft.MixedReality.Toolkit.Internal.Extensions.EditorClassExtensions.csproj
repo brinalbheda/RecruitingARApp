@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{31E6E31C-D931-EE61-7155-42255B080DD0}</ProjectGuid>
+    <ProjectGuid>{230A300E-2810-12FD-688D-BF3947F63AE8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Microsoft.MixedReality.Toolkit.Internal.Extensions.EditorClassExtensions</AssemblyName>
@@ -295,10 +295,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="GLTFSerialization">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/anandi/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -663,7 +663,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Internal.Utilities.Editor.Setup.csproj">
-      <Project>{1F356A7A-EDD5-56AA-37E0-C347A5B2DA7D}</Project>
+      <Project>{4B579221-C71D-BC40-35D5-65ACAFB505BA}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Internal.Utilities.Editor.Setup</Name>
     </ProjectReference>
   </ItemGroup>

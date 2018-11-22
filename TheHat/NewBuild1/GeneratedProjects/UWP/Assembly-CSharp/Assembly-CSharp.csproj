@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{8a7ebd6a-6ee7-4569-80c6-b04baa7ee2ab}</ProjectGuid>
+    <ProjectGuid>{914d449f-d41b-4f03-9216-b8148cd5fb0e}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -130,20 +130,20 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\Microsoft.MixedReality.Toolkit.csproj">
-      <Project>{c8c2df89-4793-4f67-8209-b393ea4f2579}</Project>
+    <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\Microsoft.MixedReality.Toolkit.csproj">
+      <Project>{912a03bc-df1a-4e9b-9ca7-de6a270b79dd}</Project>
       <Name>Microsoft.MixedReality.Toolkit</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\Microsoft.MixedReality.Toolkit.SDK.csproj">
-      <Project>{bf714d8b-e303-4bf1-885d-3c6ce34f5d88}</Project>
+    <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\Microsoft.MixedReality.Toolkit.SDK.csproj">
+      <Project>{d22fe7e3-faa7-4853-aa68-92ffac4f4026}</Project>
       <Name>Microsoft.MixedReality.Toolkit.SDK</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.InputSystem\Microsoft.MixedReality.Toolkit.InputSystem.csproj">
-      <Project>{bf714d8b-e303-4bf1-885d-3c6ce34f5d88}</Project>
+    <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.InputSystem\Microsoft.MixedReality.Toolkit.InputSystem.csproj">
+      <Project>{d22fe7e3-faa7-4853-aa68-92ffac4f4026}</Project>
       <Name>Microsoft.MixedReality.Toolkit.InputSystem</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.Examples\Microsoft.MixedReality.Toolkit.Examples.csproj">
-      <Project>{bf714d8b-e303-4bf1-885d-3c6ce34f5d88}</Project>
+    <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.Examples\Microsoft.MixedReality.Toolkit.Examples.csproj">
+      <Project>{d22fe7e3-faa7-4853-aa68-92ffac4f4026}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Examples</Name>
     </ProjectReference>
     <Reference Include="UnityEngine.SharedInternalsModule">
@@ -1938,6 +1938,15 @@
     <Compile Include="$(UnityProjectDir)Assets\Scripts\PhotoManager.cs">
       <Link>Scripts\PhotoManager.cs</Link>
     </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\Response.cs">
+      <Link>Scripts\Response.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\SimpleJSON.cs">
+      <Link>Scripts\SimpleJSON.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\TotalScoreNeedleRotation.cs">
+      <Link>Scripts\TotalScoreNeedleRotation.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs">
       <Link>Vuforia\Scripts\DefaultInitializationErrorHandler.cs</Link>
     </Compile>
@@ -1956,7 +1965,7 @@
     <Message Importance="high" Text="Running SerializationWeaver..." />
     <Move SourceFiles="@(IntermediateAssembly)" DestinationFolder="$(TargetDir)Unprocessed" OverwriteReadOnlyFiles="true" />
     <Move SourceFiles="@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')" DestinationFolder="$(TargetDir)Unprocessed" Condition="Exists('@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')')" OverwriteReadOnlyFiles="true" />
-    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;-assembly=$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;@D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\bin\$(PlatformName)\$(ConfigurationName)&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\bin\$(PlatformName)\$(ConfigurationName)&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.InputSystem\bin\$(PlatformName)\$(ConfigurationName)&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.Examples\bin\$(PlatformName)\$(ConfigurationName)&quot;" />
+    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;-assembly=$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;@D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\bin\$(PlatformName)\$(ConfigurationName)&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\bin\$(PlatformName)\$(ConfigurationName)&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.InputSystem\bin\$(PlatformName)\$(ConfigurationName)&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.Examples\bin\$(PlatformName)\$(ConfigurationName)&quot;" />
     <Message Importance="high" Text="SerializationWeaver done." />
   </Target>
   <PropertyGroup>

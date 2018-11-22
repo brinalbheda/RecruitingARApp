@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f0cc50ec-c439-42ae-aedf-4fcd85486849</PackageIdentityName>
     <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\VR project\TheHat\NewBuild1\TheHat\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\TheHat.exe">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\TheHat.exe">
       <PackagePath>entrypoint\TheHat.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anandi\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -349,7 +349,7 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\UnityPlayer.dll">
@@ -373,146 +373,146 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Debug\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Resource.res">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Resource.res">
       <PackagePath>Resource.res</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\PlaneFinding.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\PlaneFinding.dll">
       <PackagePath>PlaneFinding.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\MicStreamSelector.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\MicStreamSelector.dll">
       <PackagePath>MicStreamSelector.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\GpuTiming.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\GpuTiming.dll">
       <PackagePath>GpuTiming.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\SharingClient.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\SharingClient.dll">
       <PackagePath>SharingClient.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\VuforiaWrapper.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\VuforiaWrapper.dll">
       <PackagePath>VuforiaWrapper.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\SpatialUnderstanding.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\SpatialUnderstanding.dll">
       <PackagePath>SpatialUnderstanding.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Vuforia.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Vuforia.dll">
       <PackagePath>Vuforia.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\boot.config">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\globalgamemanagers">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level0">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level1">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level1">
       <PackagePath>Data\level1</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level2">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level2">
       <PackagePath>Data\level2</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\resources.assets">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets2.assets">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets2.assets">
       <PackagePath>Data\sharedassets2.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level0.resS">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level1.resS">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level2.resS">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\level2.resS">
       <PackagePath>Data\level2.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\resources.assets.resS">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets.resS">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets.resS">
       <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\nativePlugins.txt">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets0.resource">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.dat">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17134.0\\redist\Debug\x86\ucrtbased.dll">
@@ -521,197 +521,197 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.SharedInternalsModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.SpriteMaskModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.SpriteShapeModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.StyleSheetsModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.TerrainModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.TerrainPhysicsModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.TextRenderingModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.TilemapModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UIElementsModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ScreenCaptureModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UIModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityAnalyticsModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityConnectModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestAssetBundleModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestAssetBundleModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAssetBundleModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestAudioModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestTextureModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestWWWModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.VehiclesModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.VideoModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.VRModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.WebModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.WindModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.XRModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.XRModule.dll">
       <PackagePath>UnityEngine.XRModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UNETModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.PhysicsModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.PerformanceReportingModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AccessibilityModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AIModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AnimationModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ARModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AssetBundleModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AudioModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.Physics2DModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ClothModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.CrashReportingModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.DirectorModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.GameCenterModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.GridModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ImageConversionModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.IMGUIModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.InputModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.JSONSerializeModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ParticlesLegacyModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ParticleSystemModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.CoreModule.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.Timeline.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.SpatialTracking.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.Analytics.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Vuforia.UnityExtensions.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.StandardEvents.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\GLTFSerializationUWP.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.SDK.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.SDK.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.SDK.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.InputSystem.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.InputSystem.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.InputSystem.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.Examples.dll">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.Examples.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.Examples.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\Core\TheHat.exe">
+    <AppxPackagedFile Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\TheHat\bin\x86\Debug\Core\TheHat.exe">
       <PackagePath>TheHat.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

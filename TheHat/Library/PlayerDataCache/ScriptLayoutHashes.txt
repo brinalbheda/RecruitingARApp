@@ -1,12 +1,13 @@
 Metro
 PlayerPath?
-D:/VR project/TheHat/NewBuild1
+D:/VR project/GitAPP/RecruitingARApp/TheHat/NewBuild1
 SceneListBegin?
 Assets/Scenes/Main.unity
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/PhotoCaptureScene.unity
 SceneListEnd?
 7abde016883951c4ca4e7c44ce6adb2c Assembly-CSharp.dll:HoloToolkit.Unity.SceneLauncher
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TotalScoreNeedleRotation
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.UX.BoundingBoxGizmoHandle
 cc14930adb7692ad1dd690b46c2fce49 Microsoft.MixedReality.Toolkit.dll:Microsoft.MixedReality.Toolkit.Internal.Definitions.InputSystem.MixedRealityPointerProfile
 61aa3cfa7664a869e632305058fd4797 Microsoft.MixedReality.Toolkit.dll:Microsoft.MixedReality.Toolkit.Internal.Utilities.Physics.Interpolator
@@ -156,7 +157,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 914978d04f1c26f0f843917dfa2d47dc Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.GamepadInput
-170b85a30a68da3b9f38d54432c3ae65 Assembly-CSharp.dll:.PhotoManager
+e07eeaef8e0f4056ab94b4983bf8863b Assembly-CSharp.dll:.PhotoManager
 5c0c734b67d0a362f27e7da382507fad Assembly-CSharp.dll:HoloToolkit.Unity.UX.DistorterBulge
 979ec343bb4719b48e79cacd32bc5cf1 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.AxisController
 e0a1951523cfeb2d5ee0babfc2505009 Assembly-CSharp.dll:HoloToolkit.Unity.Interpolator
@@ -388,6 +389,7 @@ c64c7f119c6d2a8c3931b7776521b113 Assembly-CSharp.dll:HoloToolkit.Unity.UX.Parabo
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DefaultTrackableEventHandler
 04d1d552e28b9b81203e73545c7df7f8 Assembly-CSharp.dll:.gazeAnimation
 7abb7178375991ec6e0fcffd060196e9 Assembly-CSharp.dll:HoloToolkit.Examples.UX.ObjectDisplayScript
+50bb1fd665302b112f13ab02760a0fc1 Assembly-CSharp.dll:.Response
 b39fddbe4ede4fafe2e1641885144305 Assembly-CSharp.dll:HoloToolkit.Unity.WorldAnchorManager
 149f5f6ff9877e1760e88054c331199f Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMapping.RemoteMappingManager
 653e09ebb70bfbeeaf717decd116b136 Microsoft.MixedReality.Toolkit.dll:Microsoft.MixedReality.Toolkit.Internal.Utilities.ClipPlane

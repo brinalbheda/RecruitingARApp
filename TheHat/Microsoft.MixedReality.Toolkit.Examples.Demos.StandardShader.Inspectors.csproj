@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2FB3DC89-4307-B5A5-E248-7D6D064D8BEB}</ProjectGuid>
+    <ProjectGuid>{ADCCA6A7-791F-91AA-DAAD-22FE88FED993}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Microsoft.MixedReality.Toolkit.Examples.Demos.StandardShader.Inspectors</AssemblyName>
@@ -295,10 +295,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="GLTFSerialization">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/anandi/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -663,7 +663,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Examples.csproj">
-      <Project>{052F3235-1521-E193-3C49-5EA235957762}</Project>
+      <Project>{67F739F4-92BD-19B8-4A01-27FD1A105EA0}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Examples</Name>
     </ProjectReference>
   </ItemGroup>

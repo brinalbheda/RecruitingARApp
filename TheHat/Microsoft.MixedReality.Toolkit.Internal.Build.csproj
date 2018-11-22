@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B63F02F4-52B9-5094-2697-F5B8003ECDE5}</ProjectGuid>
+    <ProjectGuid>{49B32B33-6D34-B5C9-0BC8-53AC78BBE86D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Microsoft.MixedReality.Toolkit.Internal.Build</AssemblyName>
@@ -303,10 +303,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="GLTFSerialization">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/GLTFSerialization/GLTFSerialization.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat_Working/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/VR project/GitAPP/RecruitingARApp/TheHat/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/anandi/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -671,11 +671,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.csproj">
-      <Project>{7B7A0A17-9852-8C7B-E00C-5BDFFF0054FD}</Project>
+      <Project>{67A2822C-34F1-B6F6-4F69-CB84B87E829A}</Project>
       <Name>Microsoft.MixedReality.Toolkit</Name>
     </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Internal.Utilities.Editor.csproj">
-      <Project>{15885B8F-A216-AB8E-00A7-02AFC2828976}</Project>
+      <Project>{7D1DA3AF-8823-961D-1790-FBAB537FBC15}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Internal.Utilities.Editor</Name>
     </ProjectReference>
   </ItemGroup>
