@@ -17,7 +17,7 @@ var multerS3 = require('multer-s3');
 AWS.config.loadFromPath('aws.config.json');
 var s3 = new AWS.S3();
 var role = "";
-const access_token = "AQUN_9Cnw2oOnKWiWm3Z_5u27IqtJ8jShzi_SjRivbP3C_9rolJtdVcvikJc8cvvKbmhX6V_RLFvULTC0P2PlTHW_dYbESrqNAyxqZWatB4-8ZLg7Kw4D9B_iZ0iDW2mR9H0iE7NVPICxi_Oel95ZH6d9xxArP-knPXjuFDu_amSNBhfnmxL3awaicmFC6JGTV8IF6aKUMx3q2dHLRc64WHRBd5ZPByPBcAFcwdEXWC5tEfcEWoOQWA4x8LkQgznGZGx0fXH6yXrWCp6wFeVOKiN2vUJQo5qnH5uQ5Yb6O1mFp2RGCm3mxw_lweeDJvEzEJFRzgkCni3nOi-BDy6O5djp_6_5w";
+const access_token = "";
 const params = {
 	'returnFaceId': 'true'
 };
@@ -93,16 +93,26 @@ app.get('/linkedin/profile', function (req, res) {
 		// calculate education score
 		var educationScore = 0;
 
-		if(details.is_grad == "true"){
+		if(details.is_grad == true){
 			console.log("Is grad student");
 			educationScore = educationScore + 1;
 		}
-		if(details.is_ugrad == "true"){
+		if(details.is_ugrad == true){
 			console.log("Is under grad student");
 			educationScore = educationScore + 1;
 		}
 
-		educationScore = (educationScore/2) * 25;
+		var denominatorEducationScore = 0
+		if(skillroleDictionary.ugrad_required)
+			denominatorEducationScore  = denominatorEducationScore + 1;
+
+		if(skillroleDictionary.grad_required)
+			denominatorEducationScore  = denominatorEducationScore + 1;
+
+		if (denominatorEducationScore == 0 || denominatorEducationScore < educationScore)
+			educationScore = 25
+		else
+			educationScore = (educationScore/denominatorEducationScore) * 25;
 
 
 		// calculate experience score
@@ -289,7 +299,10 @@ var skillroleDictionary = {
 	"hw_engineer" : ["Verilog","System Design"],
 	"data_scientist" : ["TensorFlow" , "Keras" , "Python" ,"Pandas","Data Analysis"],
 	"web_developer" : ["Nodejs","Mysql","Angular JS","AWS","GCP","JavaScript"],
-	"experience" : "5"
+	"experience" : 5,
+	"grad_required": false,
+	"ugrad_required" : true
+
 }
 
 var personDictionary = {
@@ -346,8 +359,8 @@ var personDictionary = {
 			duration: "Jul 2015 - Jul 2017",
 			description: "Involved in the development, testing & deployment of a project, which integrated multiple E&P data platforms in an Agile environment"
 		}],
-		is_grad : "true",
-		is_ugrad : "true"
+		is_grad : true,
+		is_ugrad : true
 	},
 	"3360a30c-2b0a-42f4-906d-e9c145648c08": {
 		name: "Dhruv Bajpai",
@@ -375,8 +388,8 @@ var personDictionary = {
 			duration: "Jul 2016 - Jul 2017",
 			description: " Worked on state of the art deep learning solutions for custom vision and text problems - Object Recognition/Image Classification models"
 		}],
-		is_grad : "true",
-		is_ugrad : "true"
+		is_grad : true,
+		is_ugrad : true
 	},
 	"681fac75-f09b-4843-8304-2f92fbadc4d8": {
 		name: "Brinal Bheda",
@@ -404,8 +417,8 @@ var personDictionary = {
 			duration: "Jun 2016 - Jul 2017",
 			description: "Organized various events for general social welfare."
 		}],
-		is_grad : "true",
-		is_ugrad : "true"
+		is_grad : true,
+		is_ugrad : true
 	},
 	"a9e60552-fe8e-4962-aabf-03591622a4ca": {
 		name: "Shivi Verma",
@@ -433,8 +446,8 @@ var personDictionary = {
 			duration: "Jul 2016 - Aug 2016",
 			description: "Delivered a project on Systems, Application and Products (SAP) software, one of the leading enterprise application software. "
 		}],
-		is_grad : "true",
-		is_ugrad : "true"
+		is_grad : true,
+		is_ugrad : true
 	},
 	"4c8d09e8-4d3e-485c-bac0-2aedf51cd852": {
 		name: "Anandi Bharwani",
@@ -462,8 +475,8 @@ var personDictionary = {
 			duration: "Jul 2015 - Jun 2017",
 			description: "Worked with file systems."
 		}],
-		is_grad : "true",
-		is_ugrad : "true"
+		is_grad : true,
+		is_ugrad : true
 	},
 	"7f8f8f7f-bbf0-49bf-9425-47d68bdb96b0": {
 		name: "Varun Manocha",
@@ -491,8 +504,8 @@ var personDictionary = {
 			duration: "Dec 2016 - May 2017",
 			description: "Implemented a Customer Ticket Management System for control tower team,transitioning from an email based communication channel to an accountable web app. "
 		}],
-		is_grad : "true",
-		is_ugrad : "true"
+		is_grad : true,
+		is_ugrad : true
 	}
 };
 
@@ -562,7 +575,7 @@ function calculateExperience(duration){
 
 }
 
-var port = process.env.PORT || 8003;
+var port = process.env.PORT || 8004;
 app.listen(port, function () {
 	console.log("Server started on port " + port);
 });
