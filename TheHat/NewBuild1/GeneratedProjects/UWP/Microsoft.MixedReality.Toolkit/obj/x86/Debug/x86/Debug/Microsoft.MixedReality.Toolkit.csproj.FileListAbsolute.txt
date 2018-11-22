@@ -1,7 +1,6 @@
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\bin\x86\Debug\Microsoft.MixedReality.Toolkit.dll
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\bin\x86\Debug\Microsoft.MixedReality.Toolkit.pdb
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\bin\x86\Debug\Microsoft.MixedReality.Toolkit.pri
-D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.csprojAssemblyReference.cache
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.csproj.CoreCompileInputs.cache
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.dll
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.pdb
@@ -20,3 +19,4 @@ D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Tool
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\qualifiers.txt
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\qualifiers.txt.intermediate
 D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.csprojAssemblyReference.cache

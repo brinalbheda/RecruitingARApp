@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: 
-    ufoLicenseKey: QVFJU1BxWC8vLy8vQUFBQUtBUlhsOTc4M2tJdmtrR21nQTV6SEZLTkgxWERqNjZEdm4zWms4a3pwamIyZUgxYVRKYjlZUUVFdHBDSXhHK0Z2M0NhSGt1bDY4ZitpOW5LTmJnNEJvR2N4aUpjbTh1NjJhSlJYb0NJTWtzT2Z5dit5d2w0MWg0QlZ5V1R5aUxhS3psZTFuakFhaGFxZWZjN0xzd2FqTmcvVXN3eFg1R1N6bjFYSUE5SE5jUDNWbFBhL1BvcDlldHp5bzZaNTNpZ2ZjNFNvY2thOFlOTzh1TCtnSUxublNIQndXT0Q4cEdwV0hwS3h0cjNmeC9kMVdaRUlwZU51ZjRSckRuNWZmMDduMzlrZ3hoZG4vVnl5N1k5dmJBNFdnSFFIRTFENHJsUHFhYnB0bXl2YktrYit6M1JkN090T0Y4UEhjbXdxWnZSOTQ2WlhxcXVOQm5rb091QzJaeG9qeGNRV0lkUTRlZjNZY3JSUGFsR3FKb0c=
+    ufoLicenseKey: QVFxbnJOTC8vLy8vQUFBQUtFaGd4UDlvTzBScGdJQVltOHJLeWcwKzA3QXVGd3g1dGdUY3YwY3V0WXZ4SGdFc21yZk5GNC9VRXRxSUlFblBIcXpnTmhBZStJU01sMUlUTlpmV1lUU1JUQU11SzBJdXgwTmIxdW41V2kxSDdZbHdDbE83M2w1eHFUUGxaQmNxZHBNSW5KcWVHQThCSTN1elRoNGtzUnZvc3BLTVZxRWZheXJWZzRFZjFTREc0TWNGdG9vdUQ5S2pSUEFFbzlTUXJQRER2cFh3MXNsMnU2allCenV1eXVVb1ZBSlZnWVVrVDJCVDZGRm9PZ1dyR2xiUitXaGdmZ3AyS3ZHVERIM3V5bFZlWlRqZWhvZ2FQaFNNQitoNXl3UUIzVjhYOU5aMlkwUWMxeWhSc3BsSEtaa1ZQL3NEMk9jTzF1ZTlaRlVKMGZEa1dITmVrOGZhSnhyMy8rd2NJK2hock1iNlM3YndnUmpqcmQ3dHY0Mmc=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -53,7 +53,7 @@ MonoBehaviour:
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    trackingMode: 0
+    trackingMode: 1
     posePrediction: 0
     modelCorrectionMode: 0
     modelTransformEnabled: 0

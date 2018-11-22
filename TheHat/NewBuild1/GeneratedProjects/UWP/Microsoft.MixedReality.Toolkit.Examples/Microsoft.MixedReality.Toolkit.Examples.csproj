@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DD8D1B78-19A7-418B-AD3C-6EFA53E0293C}</ProjectGuid>
+    <ProjectGuid>{37E9D636-F115-4AB0-A312-36CBDAE97A33}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -131,7 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\Microsoft.MixedReality.Toolkit.csproj">
-      <Project>{f39345b0-0964-4276-a4f6-dcd7d609f869}</Project>
+      <Project>{c8c2df89-4793-4f67-8209-b393ea4f2579}</Project>
       <Name>Microsoft.MixedReality.Toolkit</Name>
     </ProjectReference>
     <Reference Include="UnityEngine.SharedInternalsModule">

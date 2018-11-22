@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B643B486F81A49BF0BCC7487CAD31641A2A826B75D25B68CDDBAB5E7ECAD5D38</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F8D5102E273CDDD68A51427561ED98321C1698A17DACEFE88DBF9008AE1272E8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>Template3D_1.0.0.0_x86__pzq3xp76mxafg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>Template3D_pzq3xp76mxafg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>Template3D</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-18T12:21:09.640</Modified>
+      <Modified>2018-11-22T01:05:17.061</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\TheHat.exe">
       <PackagePath>entrypoint\TheHat.exe</PackagePath>
-      <Modified>2018-10-18T12:20:44.823</Modified>
+      <Modified>2018-11-22T01:04:50.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\anandi\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-10-18T12:19:30.884</Modified>
+      <Modified>2018-11-22T01:02:35.309</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -588,23 +588,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-10-18T12:19:09.888</Modified>
+      <Modified>2018-11-22T01:02:07.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-10-18T12:19:07.287</Modified>
+      <Modified>2018-11-22T01:01:51.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-10-18T12:19:02.681</Modified>
+      <Modified>2018-11-22T01:01:44.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level1">
       <PackagePath>Data\level1</PackagePath>
-      <Modified>2018-10-18T12:19:03.716</Modified>
+      <Modified>2018-11-22T01:01:47.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level2">
       <PackagePath>Data\level2</PackagePath>
-      <Modified>2018-10-18T12:19:04.513</Modified>
+      <Modified>2018-11-22T01:01:48.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -612,63 +612,63 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-10-18T12:19:09.873</Modified>
+      <Modified>2018-11-22T01:02:07.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-10-18T12:19:07.466</Modified>
+      <Modified>2018-11-22T01:01:52.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2018-10-18T12:19:07.570</Modified>
+      <Modified>2018-11-22T01:01:52.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-10-18T12:19:08.917</Modified>
+      <Modified>2018-11-22T01:02:02.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
-      <Modified>2018-10-18T12:19:08.985</Modified>
+      <Modified>2018-11-22T01:02:02.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets2.assets">
       <PackagePath>Data\sharedassets2.assets</PackagePath>
-      <Modified>2018-10-18T12:19:09.024</Modified>
+      <Modified>2018-11-22T01:02:02.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-10-18T12:19:02.666</Modified>
+      <Modified>2018-11-22T01:01:43.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
-      <Modified>2018-10-18T12:19:03.704</Modified>
+      <Modified>2018-11-22T01:01:47.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\level2.resS">
       <PackagePath>Data\level2.resS</PackagePath>
-      <Modified>2018-10-18T12:19:04.501</Modified>
+      <Modified>2018-11-22T01:01:48.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
-      <Modified>2018-10-18T12:19:07.525</Modified>
+      <Modified>2018-11-22T01:01:52.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-10-18T12:19:08.887</Modified>
+      <Modified>2018-11-22T01:02:01.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets1.assets.resS">
       <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
-      <Modified>2018-10-18T12:19:08.980</Modified>
+      <Modified>2018-11-22T01:02:02.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-10-18T12:19:30.413</Modified>
+      <Modified>2018-11-22T01:02:34.901</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-10-18T12:19:30.419</Modified>
+      <Modified>2018-11-22T01:02:34.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2018-10-18T12:19:08.922</Modified>
+      <Modified>2018-11-22T01:02:02.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat</PackagePath>
@@ -697,259 +697,259 @@
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-18T12:20:45.965</Modified>
+      <Modified>2018-11-22T01:04:52.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.401</Modified>
+      <Modified>2018-11-22T01:05:10.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.418</Modified>
+      <Modified>2018-11-22T01:05:10.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.449</Modified>
+      <Modified>2018-11-22T01:05:10.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.483</Modified>
+      <Modified>2018-11-22T01:05:10.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.512</Modified>
+      <Modified>2018-11-22T01:05:10.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.544</Modified>
+      <Modified>2018-11-22T01:05:10.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.567</Modified>
+      <Modified>2018-11-22T01:05:10.844</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.604</Modified>
+      <Modified>2018-11-22T01:05:10.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.673</Modified>
+      <Modified>2018-11-22T01:05:10.952</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.703</Modified>
+      <Modified>2018-11-22T01:05:10.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.736</Modified>
+      <Modified>2018-11-22T01:05:11.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.772</Modified>
+      <Modified>2018-11-22T01:05:11.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.802</Modified>
+      <Modified>2018-11-22T01:05:11.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestAssetBundleModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAssetBundleModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.834</Modified>
+      <Modified>2018-11-22T01:05:11.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.868</Modified>
+      <Modified>2018-11-22T01:05:11.170</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.927</Modified>
+      <Modified>2018-11-22T01:05:11.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.954</Modified>
+      <Modified>2018-11-22T01:05:11.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.979</Modified>
+      <Modified>2018-11-22T01:05:11.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.009</Modified>
+      <Modified>2018-11-22T01:05:11.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.043</Modified>
+      <Modified>2018-11-22T01:05:11.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.093</Modified>
+      <Modified>2018-11-22T01:05:11.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.129</Modified>
+      <Modified>2018-11-22T01:05:11.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.158</Modified>
+      <Modified>2018-11-22T01:05:11.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.XRModule.dll">
       <PackagePath>UnityEngine.XRModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.184</Modified>
+      <Modified>2018-11-22T01:05:11.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.216</Modified>
+      <Modified>2018-11-22T01:05:11.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.279</Modified>
+      <Modified>2018-11-22T01:05:11.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.307</Modified>
+      <Modified>2018-11-22T01:05:11.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.340</Modified>
+      <Modified>2018-11-22T01:05:11.634</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.369</Modified>
+      <Modified>2018-11-22T01:05:11.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.423</Modified>
+      <Modified>2018-11-22T01:05:11.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.459</Modified>
+      <Modified>2018-11-22T01:05:11.783</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.488</Modified>
+      <Modified>2018-11-22T01:05:11.824</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.515</Modified>
+      <Modified>2018-11-22T01:05:11.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.549</Modified>
+      <Modified>2018-11-22T01:05:11.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.593</Modified>
+      <Modified>2018-11-22T01:05:11.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.614</Modified>
+      <Modified>2018-11-22T01:05:11.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.640</Modified>
+      <Modified>2018-11-22T01:05:11.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-10-18T12:19:19.925</Modified>
+      <Modified>2018-11-22T01:02:23.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.689</Modified>
+      <Modified>2018-11-22T01:05:12.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.714</Modified>
+      <Modified>2018-11-22T01:05:12.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.734</Modified>
+      <Modified>2018-11-22T01:05:12.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.773</Modified>
+      <Modified>2018-11-22T01:05:12.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.803</Modified>
+      <Modified>2018-11-22T01:05:12.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.829</Modified>
+      <Modified>2018-11-22T01:05:12.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.856</Modified>
+      <Modified>2018-11-22T01:05:12.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:03.906</Modified>
+      <Modified>2018-11-22T01:05:12.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.174</Modified>
+      <Modified>2018-11-22T01:05:12.842</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.306</Modified>
+      <Modified>2018-11-22T01:05:12.939</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.447</Modified>
+      <Modified>2018-11-22T01:05:13.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.586</Modified>
+      <Modified>2018-11-22T01:05:13.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.605</Modified>
+      <Modified>2018-11-22T01:05:13.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.633</Modified>
+      <Modified>2018-11-22T01:05:13.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.665</Modified>
+      <Modified>2018-11-22T01:05:13.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.800</Modified>
+      <Modified>2018-11-22T01:05:13.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2018-10-18T12:21:05.960</Modified>
+      <Modified>2018-11-22T01:05:13.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-10-18T12:21:06.073</Modified>
+      <Modified>2018-11-22T01:05:13.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\GLTFSerializationUWP.dll">
       <PackagePath>GLTFSerializationUWP.dll</PackagePath>
-      <Modified>2018-10-18T12:21:06.151</Modified>
+      <Modified>2018-11-22T01:05:13.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.031</Modified>
+      <Modified>2018-11-22T01:05:10.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.185</Modified>
+      <Modified>2018-11-22T01:05:10.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.SDK.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.SDK.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.301</Modified>
+      <Modified>2018-11-22T01:05:10.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.InputSystem.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.InputSystem.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.345</Modified>
+      <Modified>2018-11-22T01:05:10.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\Microsoft.MixedReality.Toolkit.Examples.dll">
       <PackagePath>Microsoft.MixedReality.Toolkit.Examples.dll</PackagePath>
-      <Modified>2018-10-18T12:21:02.380</Modified>
+      <Modified>2018-11-22T01:05:10.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VR project\TheHat\NewBuild1\TheHat\bin\x86\Debug\Core\TheHat.exe">
       <PackagePath>TheHat.exe</PackagePath>
-      <Modified>2018-10-18T12:21:09.631</Modified>
+      <Modified>2018-11-22T01:05:17.055</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

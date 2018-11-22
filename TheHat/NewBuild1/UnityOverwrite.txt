@@ -13,9 +13,9 @@ GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.InputSystem\project.json: 1
 GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\project.json: 1D02BC64BAC0D041019673A1C4C51737
 TheHat\App.cs: E7B1DA5D35F25B5DF03E8D1CFAA0893F
 TheHat\AssemblyConverterArgs.txt: A6011D56200A76648831042789FD6775
-TheHat\Package.appxmanifest: B667EA88E7CB44B7EC9AC1919DC26CDF
+TheHat\Package.appxmanifest: B86D24649C8B0753DF55B3E49C38DE99
 TheHat\project.json: 1D02BC64BAC0D041019673A1C4C51737
-TheHat\TheHat.csproj: D2C044C8A6AD9EF3926EFB98C112B91A
+TheHat\TheHat.csproj: 1D6F448084545B65E9710379D27C71D5
 TheHat\TheHat.csproj.user: modified
 TheHat\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
 TheHat\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084

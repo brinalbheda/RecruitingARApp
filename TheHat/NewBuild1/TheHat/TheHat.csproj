@@ -373,27 +373,27 @@
 
   <ItemGroup>
     <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{58b89ac1-2332-4755-9e4c-c753b021e77b}</Project>
+      <Project>{8a7ebd6a-6ee7-4569-80c6-b04baa7ee2ab}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\Microsoft.MixedReality.Toolkit.csproj">
-      <Project>{8fea0a01-9b4d-4b5c-aae9-bb5d7f78cf0d}</Project>
+      <Project>{bf714d8b-e303-4bf1-885d-3c6ce34f5d88}</Project>
       <Name>Microsoft.MixedReality.Toolkit</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\Microsoft.MixedReality.Toolkit.SDK.csproj">
-      <Project>{b52e197e-5a71-45b1-b4bd-5b55b029df48}</Project>
+      <Project>{269f9073-1a52-478f-be24-43a00497d2d1}</Project>
       <Name>Microsoft.MixedReality.Toolkit.SDK</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.InputSystem\Microsoft.MixedReality.Toolkit.InputSystem.csproj">
-      <Project>{bbb3a999-dbee-41ed-accb-9e42e2948b1a}</Project>
+      <Project>{3e85e839-b7f1-4586-be3a-dd5d5d924785}</Project>
       <Name>Microsoft.MixedReality.Toolkit.InputSystem</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\VR project\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.Examples\Microsoft.MixedReality.Toolkit.Examples.csproj">
-      <Project>{2ef676b7-0b4f-45f2-b1c8-7b38a3ca5b9f}</Project>
+      <Project>{6b7de16b-0ebc-4f0d-bf0b-58f5afeab5a3}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Examples</Name>
       <Private>False</Private>
     </ProjectReference>
