@@ -305,6 +305,12 @@ var skillroleDictionary = {
 
 }
 
+app.post('/skills', function (req, res) {
+    console.log(req.body)
+    skillroleDictionary = req.body
+})
+
+
 var personDictionary = {
 	"21bc1004-c428-4556-a59b-676e484c5ff4": {
 		name: "Dhanashri Tidke",
