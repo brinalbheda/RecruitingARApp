@@ -72,6 +72,11 @@ public class PhotoManager : MonoBehaviour
     public Image experienceMeter;
     public Image skillsMeter;
 
+    [SerializeField]
+    private GameObject skillObject;
+    [SerializeField]
+    private GameObject miskillObject;
+
     Sprite sprite;
     private void Start()
     {
@@ -325,6 +330,12 @@ public class PhotoManager : MonoBehaviour
                 var expDetails = "<b>" + response["experience"][0]["company"].Value + "</b>" + "\n" + response["experience"][0]["description"] + "\n" + "<b>" + response["experience"][1]["company"].Value + "</b>" + "\n" + response["experience"][1]["description"];
                 var education = response["education"]["degree"].Value + " " + response["education"]["duration"].Value;
 
+                var skill = response["skills"].Value;
+
+                Debug.Log("SKILLLSSS=>>>" + skill);
+
+
+                var miskill = response["metrics"]["skills"]["missing"].Value;
 
                 //sprites = new SpriteCollection("D:\VR project\GitAPP\RecruitingARApp\TheHat\Assets\MixedRealityToolkit\_Core\Resources\Textures" + "vit.png");
                 if (response["education"][1]["university"].Value== "National Institute Of Technology Durgapur")
@@ -349,11 +360,16 @@ public class PhotoManager : MonoBehaviour
                     sprite = Resources.Load<Sprite>("ip.png");
                 }
 
+                
+
                 expObject.GetComponent<TextMesh>().text = expString; //Experience panel
                 expDetailsObj.GetComponent<TextMesh>().text = expDetails; //Experience Details
                 nameObject.GetComponent<TextMesh>().text = name; //name Panel
                 educObject.GetComponent<TextMesh>().text = education; //education Panel
-                UnivLogo.GetComponent<SpriteRenderer>().sprite = sprite; 
+                UnivLogo.GetComponent<SpriteRenderer>().sprite = sprite;
+
+                skillObject.GetComponent<TextMesh>().text = skill; //Skill panel
+                miskillObject.GetComponent<TextMesh>().text = miskill; //Missing skill panel
 
                 Vector3 newPos = new Vector3(Camera.main.transform.position.x - 0.35f, Camera.main.transform.position.y, Camera.main.transform.position.z);
                 resObject.transform.position = newPos + Camera.main.transform.forward * 1.7f;
