@@ -1,8 +1,8 @@
+D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.csprojAssemblyReference.cache
+D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.csproj.CoreCompileInputs.cache
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\bin\x86\Debug\Microsoft.MixedReality.Toolkit.dll
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\bin\x86\Debug\Microsoft.MixedReality.Toolkit.pdb
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\bin\x86\Debug\Microsoft.MixedReality.Toolkit.pri
-D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.csprojAssemblyReference.cache
-D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.csproj.CoreCompileInputs.cache
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.dll
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.pdb
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\obj\x86\Debug\x86\Debug\priconfig.xml
