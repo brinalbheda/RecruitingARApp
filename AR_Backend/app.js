@@ -126,7 +126,11 @@ app.get('/linkedin/profile', function (req, res) {
 		if(total_experience_months % 12 > 6){
 			total_experience = total_experience + 1;
 		}
-		var experienceScore = (total_experience/parseInt(skillroleDictionary.experience)) * 25;
+		var experienceScore = 0
+		if (skillroleDictionary.experience == 0)
+			experienceScore = 25
+		else
+			experienceScore = (total_experience/parseInt(skillroleDictionary.experience)) * 25;
 
 		//calculate skills score
 		var candidateSkillsArr = details.skills;
@@ -141,8 +145,11 @@ app.get('/linkedin/profile', function (req, res) {
 
 		}
 		var matching = requiredSkillsArr.length - missingSkillsArr.length
-
-		var skillsScore = (matching / requiredSkillsArr.length) * 50;
+		var skillsScore = 0
+		if(requiredSkillsArr.length == 0)
+			skillsScore = 50
+		else
+			skillsScore = (matching / requiredSkillsArr.length) * 50;
 
 		var totalScore  = parseInt(experienceScore + skillsScore + educationScore);
 
@@ -299,11 +306,17 @@ var skillroleDictionary = {
 	"hw_engineer" : ["Verilog","System Design"],
 	"data_scientist" : ["TensorFlow" , "Keras" , "Python" ,"Pandas","Data Analysis"],
 	"web_developer" : ["Nodejs","Mysql","Angular JS","AWS","GCP","JavaScript"],
-	"experience" : 5,
+	"experience" : 0,
 	"grad_required": false,
 	"ugrad_required" : true
 
 }
+
+app.post('/skills', function (req, res) {
+    console.log(req.body)
+    skillroleDictionary = req.body
+})
+
 
 var personDictionary = {
 	"21bc1004-c428-4556-a59b-676e484c5ff4": {
@@ -428,7 +441,7 @@ var personDictionary = {
 		education: [{
 			degree: "Master's Degree, Computer Science",
 			university: "University Of Southern California",
-			duration: "2017-2109"
+			duration: "2017-2019"
 		}, {
 			degree: "Bachelor Of Technology(B.tech.), Information Technology",
 			university: "Maharaja Surajmal Institute Of Technology",
