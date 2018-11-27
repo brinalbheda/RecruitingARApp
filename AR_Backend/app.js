@@ -315,6 +315,7 @@ var skillroleDictionary = {
 app.post('/skills', function (req, res) {
     console.log(req.body)
     skillroleDictionary = req.body
+    res.send("sample response for post");
 })
 
 
