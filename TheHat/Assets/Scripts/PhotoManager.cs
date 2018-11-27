@@ -59,10 +59,30 @@ public class PhotoManager : MonoBehaviour
 
     [SerializeField]
     private GameObject resObject;
+    [SerializeField]
+    private GameObject expObject;
+    [SerializeField]
+    private GameObject expDetailsObj;
+    [SerializeField]
+    private GameObject nameObject;
+    [SerializeField]
+    private GameObject educObject;
+    [SerializeField]
+    private GameObject UnivLogo;
+    [SerializeField]
+    private GameObject experienceMeter;
+    [SerializeField]
+    private GameObject skillsMeter;
+    [SerializeField]
+    private GameObject overallMeter;
+    [SerializeField]
+    private GameObject experienceMeterText;
+    [SerializeField]
+    private GameObject skillsMeterText;
+    [SerializeField]
+    private GameObject overallMeterText;
 
-    public Image experienceMeter;
-    public Image skillsMeter;
-
+    Sprite sprite;
     private void Start()
     {
         Assert.IsNotNull(Info, "The PhotoManager requires a text mesh.");
@@ -70,12 +90,16 @@ public class PhotoManager : MonoBehaviour
 
         Info.text = "Camera off";
 
-        if (AutoStart)
-            StartCamera();
+        //if (AutoStart)
+        //    StartCamera();
 
+        
 #if NETFX_CORE
         GetPicturesFolderAsync();
 #endif
+
+        found = false;
+        startCapturing();
 
     }
 
@@ -92,7 +116,10 @@ public class PhotoManager : MonoBehaviour
 
         PhotoCapture.CreateAsync(ShowHolograms, OnPhotoCaptureCreated);
     }
-
+    void OnGUI()
+    {
+        GUI.skin.button.wordWrap = true;
+    }
 
     ///<summary>
     ///Keep calling take_photo till we get a response
@@ -186,8 +213,10 @@ public class PhotoManager : MonoBehaviour
 
     private void FillResultsUI()
     {
-        /*GameObject skillsObject = GameObject.Find("Skills");
-        GameObject parentObj = GameObject.Find("ResultObj");*/
+        /*GameObject expObject = GameObject.Find("Panel/FrameHolder/ExperiencePlane/ExperienceTitle/ExperienceDescription");
+        expObject.GetComponent<TextMesh>().text = response["courses"].Value;
+        /* = GameObject.Find("Skills");
+    GameObject parentObj = GameObject.Find("ResultObj");*/
     }
 
     private void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
@@ -204,7 +233,7 @@ public class PhotoManager : MonoBehaviour
             //Node call & check if success
             //stop camera + display of json
             //
-            //FillResultsUI();
+            
             //StopCamera();
 #if NETFX_CORE
             
@@ -212,7 +241,7 @@ public class PhotoManager : MonoBehaviour
             {
                 if(pictureFolderPath != null)
                 {
-                    System.IO.File.Move(currentImagePath, System.IO.Path.Combine(pictureFolderPath, "Camera Roll", System.IO.Path.GetFileName(currentImagePath)));
+                    //System.IO.File.Move(currentImagePath, System.IO.Path.Combine(pictureFolderPath, "Camera Roll", System.IO.Path.GetFileName(currentImagePath)));
                     Info.text = "Saved photo in camera roll";
                 }
                 else 
@@ -243,71 +272,6 @@ public class PhotoManager : MonoBehaviour
     }
     IEnumerator Upload()
     {
-        /*List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
-        formData.Add(new MultipartFormDataSection("field1=foo&field2=bar"));
-        formData.Add(new MultipartFormFileSection("file", currentImagePath));
-
-        UnityWebRequest www = UnityWebRequest.Post("http://ar-divyata.us-west-1.elasticbeanstalk.com/data", formData);
-        yield return www.SendWebRequest();
-
-        if (www.isNetworkError || www.isHttpError)
-        {
-            Debug.Log(www.error);
-            Debug.Log(www.responseCode);
-        }
-        else
-        {
-            Debug.Log("Form upload complete!");
-        }*/
-
-        /*byte[] img = File.ReadAllBytes(currentImagePath);
-
-        //create multipart list
-        List<IMultipartFormSection> requestData = new List<IMultipartFormSection>();
-
-        requestData.Add(new MultipartFormFileSection("file", img, "Shivi.jpg", "image/jpg"));
-
-        //WebRequest
-        /*UnityWebRequest request = UnityWebRequest.Post("http://ar-divyata.us-west-1.elasticbeanstalk.com/data", requestData);
-        request.SetRequestHeader("Content-Type", "multipart/form-data");*/
-        //wr.chunkedTransfer = false;
-        /*yield return wr.SendWebRequest();
-        print("request completed with code: " + wr.responseCode);
-
-        if (wr.isHttpError || wr.isNetworkError)
-        {
-            print("Error: " + wr.error);
-        }
-        else
-        {
-            print("Request Response: " + wr.downloadHandler.text);
-        }
-
-
-        /*WWWForm webForm = new WWWForm();
-        // Change the image into a bytes array
-        byte[] imageBytes = GetImageAsByteArray(currentImagePath);
-        using (UnityWebRequest www =
-            UnityWebRequest.Post("http://ar-divyata.us-west-1.elasticbeanstalk.com/data", webForm))
-        {
-            www.SetRequestHeader("Content-Type", "multipart/form-data");
-            www.uploadHandler.contentType = "multipart/form-data";
-            www.uploadHandler = new UploadHandlerRaw(imageBytes);
-            www.downloadHandler = new DownloadHandlerBuffer();
-
-            yield return www.SendWebRequest();
-            if (www.isHttpError || www.isNetworkError)
-            {
-                Debug.Log("WWW Ok!: " + www.downloadHandler.text);
-                print("Error: " + www.error+www.responseCode);
-            }
-            else
-            {
-                print("Request Response: " + www.downloadHandler.text);
-            }
-            string jsonResponse = www.downloadHandler.text;
-       
-        }*/
 
         WWWForm form = new WWWForm();
         string base64String = null;
@@ -335,7 +299,6 @@ public class PhotoManager : MonoBehaviour
         {
             Debug.Log(www.error);
             Debug.Log(www.responseCode);
-            //print("Error: " + www.error + www.responseCode);
         }
         else
         {
@@ -350,26 +313,63 @@ public class PhotoManager : MonoBehaviour
             {
                 found = true;
 
-                //TotalScoreNeedleRotation.ShowScore(response["metrics"]["score"].AsFloat);
+                float minAngle = 180;
+                float maxAngle = 0;
+                float angle = Mathf.Lerp(minAngle, maxAngle, Mathf.InverseLerp(0, 100, response["metrics"]["score"].AsFloat));
+                overallMeterText.GetComponent<TextMesh>().text = response["metrics"]["score"].Value + " / 100";
+                Image needle = overallMeter.GetComponent<Image>();
+                needle.transform.eulerAngles = new Vector3(0, 0, angle);
                 float curExperience = response["metrics"]["experience"]["current"].AsFloat;
                 float reqExperience = response["metrics"]["experience"]["required"].AsFloat;
                 float matchingSkills = response["metrics"]["skills"]["matching"].AsFloat;
                 float reqSkills = response["metrics"]["skills"]["required"].AsFloat;
-                //experienceMeter.fillAmount = curExperience / reqExperience;
-                //skillsMeter.fillAmount = matchingSkills / reqSkills;
-                /*Response response = JsonConvert.DeserializeObject<Response>(www.downloadHandler.text);
-                TotalScoreNeedleRotation.ShowScore(response.metrics.score);
-                float curExperience = response.metrics.experience.current;
-                float reqExperience = response.metrics.experience.required;
-                float matchingSkills = response.metrics.skills.matching;
-                float reqSkills = response.metrics.skills.required;
-                experienceMeter.fillAmount = curExperience / reqExperience;
-                skillsMeter.fillAmount = matchingSkills / reqSkills;*/
+                Image expMeterImage = experienceMeter.GetComponent<Image>();
+                expMeterImage.fillAmount = curExperience / reqExperience;
+                Image skillsMeterImage = skillsMeter.GetComponent<Image>();
+                skillsMeterImage.fillAmount = matchingSkills / reqSkills;
+                experienceMeterText.GetComponent<TextMesh>().text = "Experience "+curExperience.ToString() + " / " + reqExperience.ToString();
+                skillsMeterText.GetComponent<TextMesh>().text = "Skills " + matchingSkills.ToString() + " / " + reqSkills.ToString();
+                
+                //expObject = GameObject.Find("Panel/FrameHolder/ExperiencePlane/ExperienceTitle/ExperienceDescription");
+                var expString = response["experience"][0]["position"].Value + " " + response["experience"][0]["company"].Value + " " + response["experience"][0]["duration"].Value + "\n\n" + response["experience"][1]["position"].Value + " " + response["experience"][1]["company"].Value + " " + response["experience"][1]["duration"].Value; ;
+                var name = "<b>" + response["firstName"].Value + " " + response["lastName"].Value + "</b>";
+                var expDetails = "<b>" + response["experience"][0]["company"].Value + "</b>" + "\n" + response["experience"][0]["description"] + "\n" + "<b>" + response["experience"][1]["company"].Value + "</b>" + "\n" + response["experience"][1]["description"];
+                var education = response["education"]["degree"].Value + " " + response["education"]["duration"].Value;
+
+
+                //sprites = new SpriteCollection("D:\VR project\GitAPP\RecruitingARApp\TheHat\Assets\MixedRealityToolkit\_Core\Resources\Textures" + "vit.png");
+                if (response["education"][1]["university"].Value== "National Institute Of Technology Durgapur")
+                {
+                    sprite = Resources.Load<Sprite>("Assets/Resources/nit-durgapur.jpg");
+                    
+                }
+                else if(response["education"][1]["university"].Value == "Vellore Institue Of Technology")
+                {
+                    sprite = Resources.Load<Sprite>("Assets/Resources/vit.png");
+                }
+                else if(response["education"][1]["university"].Value == "Vishwakarma Institute Of Technology")
+                {
+                    sprite = Resources.Load<Sprite>("Assets/Resources/pune.png");
+                }
+                else if (response["education"][1]["university"].Value == "Dwarkadas J. Sanghvi College of Engineering")
+                {
+                    sprite = Resources.Load<Sprite>("Assets/Resources/mumbai.jpg");
+                }
+                else
+                {
+                    sprite = Resources.Load<Sprite>("ip.png");
+                }
+
+                expObject.GetComponent<TextMesh>().text = expString; //Experience panel
+                expDetailsObj.GetComponent<TextMesh>().text = expDetails; //Experience Details
+                nameObject.GetComponent<TextMesh>().text = name; //name Panel
+                educObject.GetComponent<TextMesh>().text = education; //education Panel
+                UnivLogo.GetComponent<SpriteRenderer>().sprite = sprite; 
+
+                Vector3 newPos = new Vector3(Camera.main.transform.position.x - 0.35f, Camera.main.transform.position.y, Camera.main.transform.position.z);
+                resObject.transform.position = newPos + Camera.main.transform.forward * 1.7f;
 
                 resObject.SetActive(true);
-                Vector3 newPos = new Vector3(Camera.main.transform.position.x - 0.1f, Camera.main.transform.position.y, Camera.main.transform.position.z);
-                resObject.transform.position = newPos + Camera.main.transform.forward * 1.7f;
-                
 
             }
 
