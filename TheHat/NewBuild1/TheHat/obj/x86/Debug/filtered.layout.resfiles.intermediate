@@ -40,11 +40,16 @@ Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml
 Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat
 Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml
 GpuTiming.dll
+GpuTiming.pdb
 MicStreamSelector.dll
+MicStreamSelector.pdb
 PlaneFinding.dll
+PlaneFinding.pdb
 Properties\Default.rd.xml
 Resource.res
 SharingClient.dll
+SharingClient.pdb
 SpatialUnderstanding.dll
+SpatialUnderstanding.pdb
 Vuforia.dll
 VuforiaWrapper.dll

@@ -6,7 +6,6 @@ D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Micr
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\bin\x86\Debug\Microsoft.MixedReality.Toolkit.pdb
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\bin\x86\Debug\Microsoft.MixedReality.Toolkit.pri
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\bin\x86\Debug\Microsoft.MixedReality.Toolkit.InputSystem.pdb
-D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\bin\x86\Debug\Microsoft.MixedReality.Toolkit.InputSystem.pri
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.SDK.csprojAssemblyReference.cache
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.SDK.csproj.CoreCompileInputs.cache
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\Microsoft.MixedReality.Toolkit.SDK.csproj.CopyComplete
@@ -27,3 +26,4 @@ D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Micr
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\qualifiers.txt
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\qualifiers.txt.intermediate
 D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\obj\x86\Debug\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\bin\x86\Debug\Microsoft.MixedReality.Toolkit.InputSystem.pri

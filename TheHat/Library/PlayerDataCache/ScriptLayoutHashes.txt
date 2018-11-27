@@ -158,7 +158,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 914978d04f1c26f0f843917dfa2d47dc Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.GamepadInput
-b5e28e5011b946b773375b158038b118 Assembly-CSharp.dll:.PhotoManager
+e07eeaef8e0f4056ab94b4983bf8863b Assembly-CSharp.dll:.PhotoManager
 5c0c734b67d0a362f27e7da382507fad Assembly-CSharp.dll:HoloToolkit.Unity.UX.DistorterBulge
 979ec343bb4719b48e79cacd32bc5cf1 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.AxisController
 e0a1951523cfeb2d5ee0babfc2505009 Assembly-CSharp.dll:HoloToolkit.Unity.Interpolator

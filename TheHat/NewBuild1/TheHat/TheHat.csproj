@@ -373,27 +373,27 @@
 
   <ItemGroup>
     <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{6b55e0cd-5d1c-464b-b93b-3963b94dc53a}</Project>
+      <Project>{9ef7f626-c8c2-4b13-aaed-b9730d4be76d}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit\Microsoft.MixedReality.Toolkit.csproj">
-      <Project>{5db11bd7-0071-475c-af12-1e45d547539c}</Project>
+      <Project>{c42fdc2a-a97d-487d-a8fa-56c6d5673082}</Project>
       <Name>Microsoft.MixedReality.Toolkit</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.SDK\Microsoft.MixedReality.Toolkit.SDK.csproj">
-      <Project>{46236482-2bc1-4447-9fe8-388c307d372e}</Project>
+      <Project>{f6027ed8-69e5-4dd4-8106-ad09a00419ee}</Project>
       <Name>Microsoft.MixedReality.Toolkit.SDK</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.InputSystem\Microsoft.MixedReality.Toolkit.InputSystem.csproj">
-      <Project>{d2f45c5c-01ba-4936-9a47-469a32899bcd}</Project>
+      <Project>{5f11eb85-46ec-4866-aae7-3dece32ae99e}</Project>
       <Name>Microsoft.MixedReality.Toolkit.InputSystem</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\VR project\GitAPP\RecruitingARApp\TheHat\NewBuild1\GeneratedProjects\UWP\Microsoft.MixedReality.Toolkit.Examples\Microsoft.MixedReality.Toolkit.Examples.csproj">
-      <Project>{0352d012-6485-4b06-a081-5ef30a28f479}</Project>
+      <Project>{816498ca-4ceb-42ce-a6da-9d84fc65733d}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Examples</Name>
       <Private>False</Private>
     </ProjectReference>
