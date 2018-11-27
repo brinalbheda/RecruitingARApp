@@ -47,9 +47,10 @@ public class gazeAnimation : MonoBehaviour, IFocusable
 
     public void OnFocusExit()
     {
-        //photoManager.startCapturing();
+        //if(photoManager)
+        //    photoManager.startCapturing();
 
-        extendedObject.SetActive(false);
+        //extendedObject.SetActive(false);
         //mmscene2 = mmbscene;
         //switching = 1;
         //mmenufadeout = extendedObject;
