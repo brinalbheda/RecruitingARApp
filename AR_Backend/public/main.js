@@ -26,7 +26,7 @@ $( document ).ready(function() {
           "ugrad_required" : ugrad_required
         }
         $.ajax({
-          url: 'http://localhost:8080/skills',
+          url: 'http://localhost:8095/skills',
           // dataType: "jsonp",
           data: skillroleDictionary,
           type: 'POST',
