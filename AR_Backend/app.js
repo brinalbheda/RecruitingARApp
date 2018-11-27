@@ -226,6 +226,7 @@ app.get('/identify', function (req, resp) {
 		console.log('JSON Response from identify\n');
 		console.log(jsonResponse);
 		var personId = getPersonId(jsonResponse);
+		console.log("\nPerson ID is: " + personId);
 		if (personId === null) {
 			resp.send(JSON.stringify(errorString));
 		}
@@ -254,6 +255,20 @@ app.post('/data', upload.single('file'), function (req, res) {
 		+ currentdate.getHours() + ":"
 		+ currentdate.getMinutes() + ":"
 		+ currentdate.getSeconds();
+	global.role = "sw_engineer";
+	var photoUrl = req.file.location;
+	console.log("\n Photo URL on S3:\n")
+	console.log(photoUrl);
+	res.redirect('/detect?photoUrl=' + encodeURIComponent(photoUrl));
+});
+app.post('/dataandroid', upload.single('file'), function (req, res) {
+	var currentdate = new Date();
+	var datetime = "Call sent at: " + currentdate.getDate() + "/"
+		+ (currentdate.getMonth() + 1) + "/"
+		+ currentdate.getFullYear() + " @ "
+		+ currentdate.getHours() + ":"
+		+ currentdate.getMinutes() + ":"
+		+ currentdate.getSeconds();
 	global.role = req.body.role;
 	var photoUrl = req.file.location;
 	console.log("\n Photo URL on S3:\n")
@@ -263,19 +278,26 @@ app.post('/data', upload.single('file'), function (req, res) {
 
 app.post('/postreq', function (req, res) {
 	var currentdate = new Date();
-	var datetime = ""+currentdate.getDate() +
+	var datetime = "Call sent at: " + currentdate.getDate() + "/"
+		+ (currentdate.getMonth() + 1) + "/"
+		+ currentdate.getFullYear() + " @ "
+		+ currentdate.getHours() + ":"
+		+ currentdate.getMinutes() + ":"
+		+ currentdate.getSeconds();
+	console.log(datetime);
+
+	var fileSuffix = "" + currentdate.getDate() +
 		+ (currentdate.getMonth() + 1) +
 		+ currentdate.getFullYear() +
 		+ currentdate.getHours() +
 		+ currentdate.getMinutes() +
 		+ currentdate.getSeconds();
-
 	var base64Data = req.body.img;
 	global.role = req.body.role;
 	var buf = new Buffer(base64Data, 'base64');
 	var params = {
 		Bucket: 'arvrbucket2018',
-		Key: 'upload_image'+datetime,
+		Key: 'img' + fileSuffix,
 		Body: buf,
 		ACL: 'public-read',
 		ContentEncoding: 'base64',
@@ -283,6 +305,7 @@ app.post('/postreq', function (req, res) {
 	}
 
 	var s3Bucket = new AWS.S3();
+
 	s3Bucket.upload(params, function (err, data) {
 		if (err) {
 			return console.log(err)
@@ -306,7 +329,7 @@ var skillroleDictionary = {
 	"hw_engineer" : ["Verilog","System Design"],
 	"data_scientist" : ["TensorFlow" , "Keras" , "Python" ,"Pandas","Data Analysis"],
 	"web_developer" : ["Nodejs","Mysql","Angular JS","AWS","GCP","JavaScript"],
-	"experience" : 0,
+	"experience" : 2,
 	"grad_required": false,
 	"ugrad_required" : true
 
@@ -315,9 +338,8 @@ var skillroleDictionary = {
 app.post('/skills', function (req, res) {
     console.log(req.body)
     skillroleDictionary = req.body
-    res.send("sample response for post");
-})
-
+	res.send("sample response for post");
+});
 
 var personDictionary = {
 	"21bc1004-c428-4556-a59b-676e484c5ff4": {
@@ -510,7 +532,7 @@ var personDictionary = {
 			position: "Software Engeering Intern",
 			company: "Viasat Inc.",
 			duration: "May 2018 - Aug 2018",
-			description: "Worked on developing a rool for debugging of log files."
+			description: "Worked on developing a rule for debugging of log files."
 		},
 		{
 			position: "Intern As Software Developer",
@@ -589,7 +611,7 @@ function calculateExperience(duration){
 
 }
 
-var port = process.env.PORT || 8004;
+var port = process.env.PORT || 8095;
 app.listen(port, function () {
 	console.log("Server started on port " + port);
 });
