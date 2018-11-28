@@ -35,6 +35,7 @@ $( document ).ready(function() {
               var ret = jQuery.parseJSON(data);
               $('#lblResponse').html(ret.msg);
               console.log('Success: ')
+              alert("Saved successfully!");
           },
           error: function (xhr, status, error) {
               console.log('Error: ' + error.message);

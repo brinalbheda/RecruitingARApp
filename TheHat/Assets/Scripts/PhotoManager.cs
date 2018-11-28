@@ -84,10 +84,42 @@ public class PhotoManager : MonoBehaviour
     [SerializeField]
     private GameObject ipObject;
 
-    public Image experienceMeter;
-    public Image skillsMeter;
-    public Image Imgobject;
+    [SerializeField]
+    private GameObject experienceMeter;
+    [SerializeField]
+    private GameObject skillsMeter;
+    [SerializeField]
+    private GameObject overallMeter;
+    [SerializeField]
+    private GameObject experienceMeterText;
+    [SerializeField]
+    private GameObject skillsMeterText;
+    [SerializeField]
+    private GameObject overallMeterText;
 
+    [SerializeField]
+    private GameObject skillObject;
+    [SerializeField]
+    private GameObject miskillObject;
+
+    public Image Android;
+    public Image Java;
+    public Image C;
+    public Image Cplusplus;
+    public Image Python;
+    public Image HTML;
+    public Image Matlab;
+    public Image Node;
+    public Image PHP;
+    public Image Javascript;
+    public Image MySQL;
+    public Image Csharp;
+    public Image AWS;
+    public Image Linux;
+    public Image MongoDB;
+    public Image SQL;
+    public Image Django;
+    public Image AngularJS;
 
     Sprite sprite;
     private void Start()
@@ -327,27 +359,269 @@ public class PhotoManager : MonoBehaviour
                 if(curObject)
                     curObject.SetActive(false);
                 //TotalScoreNeedleRotation.ShowScore(response["metrics"]["score"].AsFloat);
+
+                float minAngle = 180;
+                float maxAngle = 0;
+                float angle = Mathf.Lerp(minAngle, maxAngle, Mathf.InverseLerp(0, 100, response["metrics"]["score"].AsFloat));
+                overallMeterText.GetComponent<TextMesh>().text = response["metrics"]["score"].Value + " / 100";
+                Image needle = overallMeter.GetComponent<Image>();
+                needle.transform.eulerAngles = new Vector3(0, 0, angle);
                 float curExperience = response["metrics"]["experience"]["current"].AsFloat;
                 float reqExperience = response["metrics"]["experience"]["required"].AsFloat;
                 float matchingSkills = response["metrics"]["skills"]["matching"].AsFloat;
                 float reqSkills = response["metrics"]["skills"]["required"].AsFloat;
-                //experienceMeter.fillAmount = curExperience / reqExperience;
-                //skillsMeter.fillAmount = matchingSkills / reqSkills;
-                /*Response response = JsonConvert.DeserializeObject<Response>(www.downloadHandler.text);
-                TotalScoreNeedleRotation.ShowScore(response.metrics.score);
-                float curExperience = response.metrics.experience.current;
-                float reqExperience = response.metrics.experience.required;
-                float matchingSkills = response.metrics.skills.matching;
-                float reqSkills = response.metrics.skills.required;
-                experienceMeter.fillAmount = curExperience / reqExperience;
-                skillsMeter.fillAmount = matchingSkills / reqSkills;*/
-
+                Image expMeterImage = experienceMeter.GetComponent<Image>();
+                expMeterImage.fillAmount = curExperience / reqExperience;
+                Image skillsMeterImage = skillsMeter.GetComponent<Image>();
+                skillsMeterImage.fillAmount = matchingSkills / reqSkills;
+                experienceMeterText.GetComponent<TextMesh>().text = "Experience "+curExperience.ToString() + " / " + reqExperience.ToString();
+                skillsMeterText.GetComponent<TextMesh>().text = "Skills " + matchingSkills.ToString() + " / " + reqSkills.ToString();
+                
                 //expObject = GameObject.Find("Panel/FrameHolder/ExperiencePlane/ExperienceTitle/ExperienceDescription");
-                var expString = response["experience"][0]["position"].Value + " " + response["experience"][0]["company"].Value + " " + response["experience"][0]["duration"].Value + "\n\n" + response["experience"][1]["position"].Value + " " + response["experience"][1]["company"].Value + " " + response["experience"][1]["duration"].Value; ;
+                var expString = response["experience"][0]["position"].Value + "\n " + response["experience"][0]["company"].Value + " " + response["experience"][0]["duration"].Value + "\n\n" + response["experience"][1]["position"].Value + "\n " + response["experience"][1]["company"].Value + " " + response["experience"][1]["duration"].Value; ;
                 var name = "<b>" + response["firstName"].Value + " " + response["lastName"].Value + "</b>";
                 var expDetails = "<b>" + response["experience"][0]["company"].Value + "</b>" + "\n" + response["experience"][0]["description"] + "\n" + "<b>" + response["experience"][1]["company"].Value + "</b>" + "\n" + response["experience"][1]["description"];
                 var education = response["education"]["degree"].Value + " " + response["education"]["duration"].Value;
                 var undergradEduc = response["education"][1]["degree"].Value + " " + response["education"][1]["duration"].Value;
+
+
+                //var skill = response["skills"][0];
+
+                //Debug.Log("SKILLLSSS=>>>" + skill);
+                //Debug.Log("Experienceeeeeeeeeeeeeeee" + expString);
+
+
+
+                int length = response["skills"].Count;
+                String tempSkills = "";
+                for (int i = 0; i < length; i++)
+                {
+                    if (i % 4 == 0)
+                    {
+                        tempSkills += System.Environment.NewLine;
+                    }
+
+                    tempSkills += response["skills"][i].Value + (i == length - 1 ? "" : ", ");
+
+
+                    if (response["skills"][i].Value == "Android Development")
+                    {
+                        //CplusplusSprite = Cplusplus.GetComponent<Image>();
+                        //CplusplusSprite.enabled = true;
+                        //Cplusplus.SetActive(true);
+
+                        Image AndroidImage = Android.GetComponent<Image>();
+                        Android.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Java")
+                    {
+                        Image JavaImage = Java.GetComponent<Image>();
+                        Java.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Core Java")
+                    {
+                        Image JavaImage = Java.GetComponent<Image>();
+                        Java.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "C")
+                    {
+                        Image CImage = C.GetComponent<Image>();
+                        C.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "C++")
+                    {
+                        Image CplusplusImage = Cplusplus.GetComponent<Image>();
+                        Cplusplus.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Python")
+                    {
+                        Image PythonImage = Python.GetComponent<Image>();
+                        Python.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "HTML")
+                    {
+                        Image HTMLImage = HTML.GetComponent<Image>();
+                        HTML.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Matlab")
+                    {
+                        Image MatlabImage = Matlab.GetComponent<Image>();
+                        Matlab.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Node.js")
+                    {
+                        Image NodeImage = Node.GetComponent<Image>();
+                        Node.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "PHP")
+                    {
+                        Image PHPImage = PHP.GetComponent<Image>();
+                        PHP.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Javascript")
+                    {
+                        Image JavascriptImage = Javascript.GetComponent<Image>();
+                        Javascript.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "MySQL")
+                    {
+                        Image MySQLImage = MySQL.GetComponent<Image>();
+                        MySQL.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "C#")
+                    {
+                        Image CsharpImage = Csharp.GetComponent<Image>();
+                        Csharp.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Amazon Web Services(AWS)")
+                    {
+                        Image AWSImage = AWS.GetComponent<Image>();
+                        AWS.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Linux")
+                    {
+                        Image LinuxImage = Linux.GetComponent<Image>();
+                        Linux.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "MongoDB")
+                    {
+                        Image MongoDBImage = MongoDB.GetComponent<Image>();
+                        MongoDB.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "SQL")
+                    {
+                        Image SQLImage = SQL.GetComponent<Image>();
+                        SQL.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Django")
+                    {
+                        Image DjangoImage = Django.GetComponent<Image>();
+                        Django.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "AngularJS")
+                    {
+                        Image AngularJSImage = AngularJS.GetComponent<Image>();
+                        AngularJS.enabled = true;
+                    }
+
+                }
+
+
+                int lengthMissingSkills = response["metrics"]["skills"]["missing"].Count;
+                String tempMissingSkills = "";
+                for (int i = 0; i < lengthMissingSkills; i++)
+                {
+                    if (i % 4 == 0)
+                    {
+                        tempMissingSkills += System.Environment.NewLine;
+                    }
+
+                    tempMissingSkills += response["metrics"]["skills"]["missing"][i].Value + (i == lengthMissingSkills - 1 ? "" : ", ");
+
+                    if (response["skills"][i].Value == "Android Development")
+                    {
+                        //CplusplusSprite = Cplusplus.GetComponent<Image>();
+                        //CplusplusSprite.enabled = true;
+                        //Cplusplus.SetActive(true);
+
+                        Image AndroidImage = Android.GetComponent<Image>();
+                        Android.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Java")
+                    {
+                        Image JavaImage = Java.GetComponent<Image>();
+                        Java.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Core Java")
+                    {
+                        Image JavaImage = Java.GetComponent<Image>();
+                        Java.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "C")
+                    {
+                        Image CImage = C.GetComponent<Image>();
+                        C.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "C++")
+                    {
+                        Image CplusplusImage = Cplusplus.GetComponent<Image>();
+                        Cplusplus.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Python")
+                    {
+                        Image PythonImage = Python.GetComponent<Image>();
+                        Python.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "HTML")
+                    {
+                        Image HTMLImage = HTML.GetComponent<Image>();
+                        HTML.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Matlab")
+                    {
+                        Image MatlabImage = Matlab.GetComponent<Image>();
+                        Matlab.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Node.js")
+                    {
+                        Image NodeImage = Node.GetComponent<Image>();
+                        Node.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "PHP")
+                    {
+                        Image PHPImage = PHP.GetComponent<Image>();
+                        PHP.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Javascript")
+                    {
+                        Image JavascriptImage = Javascript.GetComponent<Image>();
+                        Javascript.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "MySQL")
+                    {
+                        Image MySQLImage = MySQL.GetComponent<Image>();
+                        MySQL.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "C#")
+                    {
+                        Image CsharpImage = Csharp.GetComponent<Image>();
+                        Csharp.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Amazon Web Services(AWS)")
+                    {
+                        Image AWSImage = AWS.GetComponent<Image>();
+                        AWS.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Linux")
+                    {
+                        Image LinuxImage = Linux.GetComponent<Image>();
+                        Linux.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "MongoDB")
+                    {
+                        Image MongoDBImage = MongoDB.GetComponent<Image>();
+                        MongoDB.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "SQL")
+                    {
+                        Image SQLImage = SQL.GetComponent<Image>();
+                        SQL.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "Django")
+                    {
+                        Image DjangoImage = Django.GetComponent<Image>();
+                        Django.enabled = true;
+                    }
+                    if (response["skills"][i].Value == "AngularJS")
+                    {
+                        Image AngularJSImage = AngularJS.GetComponent<Image>();
+                        AngularJS.enabled = true;
+                    }
+
+                }
+
+
+
 
                 //sprites = new SpriteCollection("D:\VR project\GitAPP\RecruitingARApp\TheHat\Assets\MixedRealityToolkit\_Core\Resources\Textures" + "vit.png");
                 if (response["education"][1]["university"].Value== "National Institute Of Technology Durgapur")
@@ -384,7 +658,11 @@ public class PhotoManager : MonoBehaviour
                 expDetailsObj.GetComponent<TextMesh>().text = expDetails; //Experience Details
                 nameObject.GetComponent<TextMesh>().text = name; //name Panel
                 educObject.GetComponent<TextMesh>().text = education; //education Panel
-                UnivLogo.GetComponent<SpriteRenderer>().sprite = sprite; 
+                UnivLogo.GetComponent<SpriteRenderer>().sprite = sprite;
+
+                skillObject.GetComponent<TextMesh>().text = tempSkills; //Skill panel
+                miskillObject.GetComponent<TextMesh>().text = tempMissingSkills; //Missing skill panel
+
                 UndergradDetails.GetComponent<TextMesh>().text = undergradEduc; //undergrad Panel
                 Vector3 newPos = new Vector3(Camera.main.transform.position.x - 0.35f, Camera.main.transform.position.y, Camera.main.transform.position.z);
                 resObject.transform.position = newPos + Camera.main.transform.forward * 1.7f;
