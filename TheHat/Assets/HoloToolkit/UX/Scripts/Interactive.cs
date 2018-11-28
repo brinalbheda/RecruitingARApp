@@ -26,6 +26,9 @@ namespace HoloToolkit.Examples.InteractiveElements
     {
 
         public GameObject ParentObject;
+
+        [SerializeField]
+        public string role;
         TextMesh textMesh;
         //public GameObject MenuReference;
         /// <summary>
@@ -180,6 +183,7 @@ namespace HoloToolkit.Examples.InteractiveElements
                 return;
             }
 
+            var click = eventData.currentInputModule;
             UpdateEffects();
 
             OnSelectEvents.Invoke();
@@ -187,6 +191,7 @@ namespace HoloToolkit.Examples.InteractiveElements
 
             //Stop Camera and load next scene
             //--photoManager.StopCamera();
+            GlobalControl.Instance.role = role;
             SceneManager.LoadSceneAsync(3);
 
             Debug.Log("Input clicked");

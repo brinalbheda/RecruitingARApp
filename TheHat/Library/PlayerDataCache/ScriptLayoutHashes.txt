@@ -12,6 +12,7 @@ SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.UX.BoundingBoxGizmoHandle
 cc14930adb7692ad1dd690b46c2fce49 Microsoft.MixedReality.Toolkit.dll:Microsoft.MixedReality.Toolkit.Internal.Definitions.InputSystem.MixedRealityPointerProfile
 61aa3cfa7664a869e632305058fd4797 Microsoft.MixedReality.Toolkit.dll:Microsoft.MixedReality.Toolkit.Internal.Utilities.Physics.Interpolator
+a0c74a13129fa097992a9ca7bf229462 Assembly-CSharp.dll:.GlobalControl
 c435bd06b74bbebac563a6d81dae369c Assembly-CSharp.dll:HoloToolkit.Unity.CanvasHelper
 6dcd5512ea7912a6bfb5a8bc726e3049 Assembly-CSharp.dll:HoloToolkit.Unity.UX.Bezier
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:HoloToolkit.Unity.FadeScript
@@ -158,7 +159,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 914978d04f1c26f0f843917dfa2d47dc Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.GamepadInput
-e07eeaef8e0f4056ab94b4983bf8863b Assembly-CSharp.dll:.PhotoManager
+f6f92d1e323a9df4cb8b7bf2cb707efc Assembly-CSharp.dll:.PhotoManager
 5c0c734b67d0a362f27e7da382507fad Assembly-CSharp.dll:HoloToolkit.Unity.UX.DistorterBulge
 979ec343bb4719b48e79cacd32bc5cf1 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.AxisController
 e0a1951523cfeb2d5ee0babfc2505009 Assembly-CSharp.dll:HoloToolkit.Unity.Interpolator
@@ -314,6 +315,7 @@ af1b899928fa73a7824f1b26518097f6 Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.M
 5afd3db10698268d25f6ba1fced4614b Assembly-CSharp.dll:HoloToolkit.Unity.UX.LineParticles
 aa8cd5da709f8f81570d5c3ece89082e Microsoft.MixedReality.Toolkit.SDK.dll:Microsoft.MixedReality.Toolkit.SDK.UX.Cursors.AnimatedCursor
 7af9546644a163574e9d4ff26d86b8f2 Assembly-CSharp.dll:HoloToolkit.Unity.FadeManager
+5eb9ddd8a23ad7976ef3451a4a471a48 Assembly-CSharp.dll:.panelAnim
 c33d01c4bc5af79105f862d8a2f08cdf Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.ButtonIconProfileTexture
 8fcf49d84f9891153abdb23542168a69 Microsoft.MixedReality.Toolkit.SDK.dll:Microsoft.MixedReality.Toolkit.SDK.UX.Controllers.MixedRealityControllerVisualizer
 7a65adebc9a24f885fe1434a888037a0 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.InteractionInputSource
@@ -423,7 +425,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-166b070f89c1bae12b7d7646079a100f Assembly-CSharp.dll:HoloToolkit.Examples.InteractiveElements.Interactive
+ba51786f4ae7080d28f0cdc44cbbd0e3 Assembly-CSharp.dll:HoloToolkit.Examples.InteractiveElements.Interactive
 0739d9a7ca3db0f985c3fd8721aafe83 Assembly-CSharp.dll:HoloToolkit.Unity.UX.LineObjectSwarm
 8aa5c1c99ee5da26b779f7d54e977a39 Assembly-CSharp.dll:HoloToolkit.Unity.DirectionIndicator
 a09e42165a002297661118be3a9713f8 Microsoft.MixedReality.Toolkit.SDK.dll:Microsoft.MixedReality.Toolkit.SDK.UX.Pointers.ParabolicTeleportPointer

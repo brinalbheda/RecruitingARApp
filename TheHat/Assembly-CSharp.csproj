@@ -574,7 +574,9 @@
     <Compile Include="Assets\HoloToolkit\UX\Scripts\Widgets\InteractiveWidget.cs" />
     <Compile Include="Assets\Scripts\Click.cs" />
     <Compile Include="Assets\Scripts\gazeAnimation.cs" />
+    <Compile Include="Assets\Scripts\global stuff\GlobalControl.cs" />
     <Compile Include="Assets\Scripts\InteractionHandler.cs" />
+    <Compile Include="Assets\Scripts\panelAnim.cs" />
     <Compile Include="Assets\Scripts\PhotoManager.cs" />
     <Compile Include="Assets\Scripts\Response.cs" />
     <Compile Include="Assets\Scripts\SimpleJSON.cs" />
