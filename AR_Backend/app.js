@@ -348,11 +348,13 @@ var personDictionary = {
 		courses: ["Analysis of Algorithms", "Applied Natural Language Processing", "Augmented, Virtual and Mixed Reality", "Foundations of Artificial Intelligence"],
 		skills: ["Java", "Algorithms", "Python", "JavaScript", "MySQL", "C"],
 		education: [{
-			degree: "Master of Science - MS, Computer Science",
+			degree: "Master of Science",
+			specialization: "Computer Science",
 			university: "University of Southern California Viterbi School of Engineering",
 			duration: "2018 - 2020"
 		}, {
-			degree: "Bachelor of Technology - BTech, Computer Science",
+			degree: "Bachelor of Technology",
+			specialization: "Computer Science",
 			university: "Vishwakarma Institute Of Technology",
 			duration: "2011 - 2015"
 		}],
@@ -375,11 +377,13 @@ var personDictionary = {
 		courses: ["Analysis of Algorithms", "Foundations of Artificial Intelligence", "Applied Natural Language Processing", "Augmented, Virtual and Mixed Reality", "Web Technologies", "Information Retrieval and Web Search Engines"],
 		skills: ["AngularJS", "Java", "JavaScript", "Scrum", "Node.js", "Python", "Amazon Web Services(AWS)", "MySQL", "C#", "MongoDB"],
 		education: [{
-			degree: "Master of Science - MS, Computer Science",
+			degree: "Master of Science",
+			specialization: "Computer Science",
 			university: "University of Southern California",
 			duration: "2017 - 2019"
 		}, {
-			degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+			degree: "Bachelor of Technology",
+			specialization: "Computer Science",
 			university: "Vellore Institute Of Technology",
 			duration: "2011 - 2015"
 		}],
@@ -404,11 +408,13 @@ var personDictionary = {
 		courses: ["Analysis of Algorithms", "Foundations of Artificial Intelligence", "Applied Natural Language Processing", "Augmented, Virtual and Mixed Reality", "Machine Learning", "Database Systems"],
 		skills: ["Programming", "Android Development", "Visual Basic", "Java", "C++", "C", "JavaScript", "PHP", "MySQL", "HTML", "Matlab"],
 		education: [{
-			degree: "Master of Science - MS, Computer Science",
+			degree: "Master of Science",
+			specialization: "Computer Science",
 			university: "University of Southern California",
 			duration: "2017 - 2019"
 		}, {
-			degree: "B.Tech, Computer Engineering",
+			degree: "B.Tech",
+			specialization: "Computer Engineering",
 			university: "University School of Information Technology",
 			duration: "2012 - 2016"
 		}],
@@ -433,11 +439,13 @@ var personDictionary = {
 		courses: ["Advanced Mobile Devices and Game Consoles", "Computer Networks", "Digital Signal Processing", "Internet and Cloud Computing"],
 		skills: ["Python", "C++", "C", "Matlab", "Java"],
 		education: [{
-			degree: "Master of Science - MS, Electrical Engineering-Multimedia and Creative",
+			degree: "Master of Science",
+			specialization: "Electrical Engineering",
 			university: "University Of Southern California",
 			duration: "2017-2019"
 		}, {
-			degree: "Bachelor Of Engineering(BE), Electrionics and Telecommunication",
+			degree: "Bachelor Of Engineering",
+			specialization: "Electrionics and Telecommunication",
 			university: "Dwarkadas J. Sanghvi College of Engineering",
 			duration: "2013-2017"
 		}],
@@ -463,10 +471,13 @@ var personDictionary = {
 		skills: ["C++", "PHP", "JavaScript", "Node.js", "Core Java", "HTML"],
 		education: [{
 			degree: "Master's Degree, Computer Science",
+			
 			university: "University Of Southern California",
+			specialization: "Computer Science",
 			duration: "2017-2019"
 		}, {
-			degree: "Bachelor Of Technology(B.tech.), Information Technology",
+			degree: "Bachelor Of Technology",
+			specialization: "Information Technology",
 			university: "Maharaja Surajmal Institute Of Technology",
 			duration: "2013-2017"
 		}],
@@ -491,11 +502,13 @@ var personDictionary = {
 		courses: ["AR/VR", "OS", "Web Technologies", "Algorithms"],
 		skills: ["C++", "Python", "Linux", "SQL"],
 		education: [{
-			degree: "Master's Of Science - MS,Computer Science",
+			degree: "Master's Of Science",
+			specialization: "Information Technology",
 			university: "University Of Southern California",
 			duration: "2017-2019"
 		}, {
-			degree: "Bachelor Of Technology - Btech,Computer Science",
+			degree: "Bachelor Of Technology",
+			specialization: "Computer Science",
 			university: "National Institute Of Technology Durgapur",
 			duration: "2011-2015"
 		}],
@@ -520,11 +533,13 @@ var personDictionary = {
 		courses: ["Algorithms", "Web technologies", "Database Systems", "AR/VR"],
 		skills: ["Python", "C++", "Django"],
 		education: [{
-			degree: "Master's Degree, Computer Science",
+			degree: "Master's Degree",
+			specialization: "Computer Science",
 			university: "University Of Southern California",
 			duration: "2017-2019"
 		}, {
-			degree: "Bachelor's Degree, Computer Science",
+			degree: "Bachelor's Degree",
+			specialization: "Computer Science",
 			university: "Vellore Institue Of Technology",
 			duration: "2013-2017"
 		}],
