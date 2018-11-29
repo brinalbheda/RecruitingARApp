@@ -470,8 +470,7 @@ var personDictionary = {
 		courses: ["OS", "AR/VR", "Algorithms", "Web technologies"],
 		skills: ["C++", "PHP", "JavaScript", "Node.js", "Core Java", "HTML"],
 		education: [{
-			degree: "Master's Degree, Computer Science",
-			
+			degree: "Master's Degree",
 			university: "University Of Southern California",
 			specialization: "Computer Science",
 			duration: "2017-2019"
