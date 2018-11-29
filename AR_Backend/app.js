@@ -483,7 +483,7 @@ var personDictionary = {
 		experience: [{
 			position: "Software Engineering Intern",
 			company: "Viasat Inc.",
-			duration: "May 2018 - Aug 2018",
+			duration: "May 2018 - Jan 2019",
 			description: "Developed a model to predict anomaly in a live production data."
 		},
 		{
@@ -530,7 +530,7 @@ var personDictionary = {
 		name: "Varun Manocha",
 		userUrl: "https://www.linkedin.com/in/manochav/",
 		courses: ["Algorithms", "Web technologies", "Database Systems", "AR/VR"],
-		skills: ["Python", "C++", "Django"],
+		skills: ["C++", "JavaScript", "Node.js", "HTML", "Python", "C", "Matlab", "Java", "Linux", "Android Development"],
 		education: [{
 			degree: "Master's Degree",
 			specialization: "Computer Science",
